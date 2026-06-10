@@ -2,7 +2,6 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SERVERINFO_DIR="${SERVERINFO_DIR:-/mnt/nvme1p5t/serverinfo}"
 TOOLS_DIR="${TOOLS_DIR:-$ROOT_DIR/tools}"
 OUT_PATH=""
 
@@ -12,17 +11,15 @@ if [ "${1:-}" = "--out" ]; then
 fi
 
 bash "$ROOT_DIR/scripts/prepare_serverinfo_tools.sh"
-STREAM_DIR="$TOOLS_DIR/STREAM_IC2022v0"
-export LD_LIBRARY_PATH="$STREAM_DIR:${LD_LIBRARY_PATH:-}"
+PERFSPECT_BIN="$TOOLS_DIR/perfspect/perfspect"
 
-if [ -x "$STREAM_DIR/stream-icpc-avx2.exe" ]; then
-  CMD=("$STREAM_DIR/stream-icpc-avx2.exe")
-elif [ -x "$STREAM_DIR/stream-icpc.exe" ]; then
-  CMD=("$STREAM_DIR/stream-icpc.exe")
-else
-  echo "STREAM binary not found after preparation in $STREAM_DIR" >&2
+if [ ! -x "$PERFSPECT_BIN" ]; then
+  echo "PerfSpect binary not found after preparation: $PERFSPECT_BIN" >&2
   exit 1
 fi
+
+shift || true
+CMD=("$PERFSPECT_BIN" report "$@")
 
 if [ -n "$OUT_PATH" ]; then
   mkdir -p "$(dirname "$OUT_PATH")"

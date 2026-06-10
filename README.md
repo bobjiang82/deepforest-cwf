@@ -7,12 +7,19 @@ Benchmark kit for comparing DeepForest training performance on `yi-cwf`, especia
 This repo is for reproducible performance comparison, not just smoke testing.
 
 It aims to provide:
-- application-level benchmarking with DeepForest on the OpenML Covertype workload
+- application-level benchmarking with DeepForest on OpenML workloads
 - repeatable timing for data load / fit / predict / end-to-end runtime
 - structured result output in JSON and CSV
 - system metadata capture for fair A/B comparison
 - guidance for DDR vs MRDIMM experiments
-- optional wrappers for system-level benchmarks such as STREAM and Intel MLC
+- integration with serverinfo-based STREAM, Intel MLC, and PerfSpect tools
+
+## Recommended datasets
+
+For memory-performance comparison:
+- primary: OpenML did `159` (`RandomRBF_50_1E-3`)
+- secondary: OpenML did `1111` (`KDDCup09_appetency`)
+- optional categorical complement: OpenML did `40668` (`connect-4`)
 
 ## Layout
 
@@ -23,42 +30,32 @@ benchmark/
     repeat_runner.py            # multi-run driver and summary stats
     compare_runs.py             # baseline vs candidate result comparison
 scripts/
-  setup_env.sh                  # create venv and install pinned deps
-  collect_system_info.sh        # lscpu, numa, mem, versions, kernel
-  run_benchmark.sh              # convenient end-to-end runner
-  run_stream.sh                 # optional STREAM wrapper
-  run_mlc.sh                    # optional Intel MLC wrapper
+  setup_env.sh
+  collect_system_info.sh
+  prepare_serverinfo_tools.sh   # unpack MLC / STREAM / PerfSpect from /mnt/nvme1p5t/serverinfo
+  run_benchmark.sh
+  run_stream.sh
+  run_mlc.sh
+  run_perfspect.sh
 configs/
-  benchmark-default.yaml        # default benchmark parameters
+  benchmark-default.yaml
+docs/
+  methodology.md
 results/
   .gitkeep
 smoke/
-  df_openml.py                  # simple smoke version migrated from earlier work
-docs/
-  methodology.md                # how to compare DDR vs MRDIMM fairly
+  df_openml.py
 ```
-
-## Benchmark principles
-
-To compare memory configurations fairly, keep these fixed across runs:
-- CPU model and socket topology
-- BIOS settings relevant to power, turbo, NUMA, SNC, and C-states
-- kernel / OS / Python / package versions
-- dataset and train/test split
-- benchmark parameters such as `n_jobs`
-- thermal and background workload conditions
-
-Recommended experiment shape:
-- 1 warm-up run
-- 5 measured runs per configuration
-- compare median / mean / stddev
-- report both app-level timings and system-level memory measurements
 
 ## Quick start
 
 ```bash
 ./scripts/setup_env.sh
+./scripts/prepare_serverinfo_tools.sh
+./scripts/run_stream.sh results/ddr_baseline/stream.txt
+./scripts/run_mlc.sh results/ddr_baseline/mlc.txt
 TAG=ddr_baseline DF_N_JOBS=288 ./scripts/run_benchmark.sh
+
 TAG=mrdimm_candidate DF_N_JOBS=288 ./scripts/run_benchmark.sh
 python benchmark/deepforest/compare_runs.py \
   --baseline results/ddr_baseline/summary.json \
@@ -80,7 +77,7 @@ Per measured run, the benchmark captures:
 
 ## Sources
 
-- OpenML Covertype dataset id 159: https://www.openml.org/search?type=data&id=159
+- OpenML Covertype dataset lookup and dataset metadata via OpenML API: https://www.openml.org/
 - deep-forest 0.1.7: https://pypi.org/project/deep-forest/0.1.7/
 - NumPy 1.23.5: https://pypi.org/project/numpy/1.23.5/
 - SciPy 1.13.1: https://pypi.org/project/scipy/1.13.1/
