@@ -24,3 +24,7 @@ for m in mods:
     mod = __import__(m)
     print(m, getattr(mod, '__version__', 'unknown'))
 PY
+
+echo
+echo "Suggested next step:"
+echo "  TAG=baseline DF_N_JOBS=$(nproc) ./scripts/run_benchmark.sh"

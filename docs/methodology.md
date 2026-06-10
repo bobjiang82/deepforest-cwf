@@ -32,6 +32,23 @@ Compare memory-configuration impact on real application performance using DeepFo
 - per-layer timing from DeepForest logs
 - system memory benchmark results (STREAM / MLC)
 
+## Recommended tags
+
+- `ddr_baseline`
+- `mrdimm_candidate`
+- `ddr_recheck`
+
+## Example commands
+
+```bash
+./scripts/setup_env.sh
+TAG=ddr_baseline DF_N_JOBS=288 ./scripts/run_benchmark.sh
+TAG=mrdimm_candidate DF_N_JOBS=288 ./scripts/run_benchmark.sh
+python benchmark/deepforest/compare_runs.py \
+  --baseline results/ddr_baseline/summary.json \
+  --candidate results/mrdimm_candidate/summary.json
+```
+
 ## Interpretation
 
 If MRDIMM improves memory behavior, the strongest signal is usually reduced fit time and better consistency across repeated runs. Accuracy should remain effectively unchanged when the seed and data split are fixed.

@@ -14,14 +14,14 @@ It aims to provide:
 - guidance for DDR vs MRDIMM experiments
 - optional wrappers for system-level benchmarks such as STREAM and Intel MLC
 
-## Planned layout
+## Layout
 
 ```text
 benchmark/
   deepforest/
     benchmark_df_openml.py      # precise timers + structured output
     repeat_runner.py            # multi-run driver and summary stats
-    metrics.py                  # timing/stat helpers
+    compare_runs.py             # baseline vs candidate result comparison
 scripts/
   setup_env.sh                  # create venv and install pinned deps
   collect_system_info.sh        # lscpu, numa, mem, versions, kernel
@@ -54,14 +54,29 @@ Recommended experiment shape:
 - compare median / mean / stddev
 - report both app-level timings and system-level memory measurements
 
-## Initial scope
+## Quick start
 
-The first deliverable will include:
-- repaired `df_openml.py` smoke test
-- benchmark-oriented DeepForest runner with split timers
-- repeat runner with summary statistics
-- environment setup script with pinned versions
-- methodology note for DDR vs MRDIMM comparison
+```bash
+./scripts/setup_env.sh
+TAG=ddr_baseline DF_N_JOBS=288 ./scripts/run_benchmark.sh
+TAG=mrdimm_candidate DF_N_JOBS=288 ./scripts/run_benchmark.sh
+python benchmark/deepforest/compare_runs.py \
+  --baseline results/ddr_baseline/summary.json \
+  --candidate results/mrdimm_candidate/summary.json
+```
+
+## What the benchmark records
+
+Per measured run, the benchmark captures:
+- dataset load time
+- split time
+- fit time
+- predict time
+- total time
+- accuracy
+- Python / package versions
+- git commit
+- host / kernel / CPU summary
 
 ## Sources
 

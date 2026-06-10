@@ -5,6 +5,7 @@ import json
 import os
 import platform
 import socket
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -34,18 +35,35 @@ def append_csv(path: Path, row: dict):
         writer.writerow(row)
 
 
+def cmd_output(cmd):
+    try:
+        return subprocess.check_output(cmd, text=True, stderr=subprocess.STDOUT).strip()
+    except Exception as e:
+        return f'ERROR:{type(e).__name__}:{e}'
+
+
+def git_commit(root: Path):
+    return cmd_output(['git', '-C', str(root), 'rev-parse', '--short', 'HEAD'])
+
+
+def package_version(mod, fallback='unknown'):
+    return getattr(mod, '__version__', fallback)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset-id', type=int, default=159)
     parser.add_argument('--test-size', type=float, default=0.2)
     parser.add_argument('--random-state', type=int, default=42)
     parser.add_argument('--n-jobs', type=int, default=os.cpu_count() or 1)
+    parser.add_argument('--backend', default='custom')
     parser.add_argument('--cache-dir', default='./data/openml_cache')
     parser.add_argument('--json-out', default='')
     parser.add_argument('--csv-out', default='')
     parser.add_argument('--tag', default='')
     args = parser.parse_args()
 
+    root_dir = Path(__file__).resolve().parents[2]
     effective_n_jobs = min(args.n_jobs, os.cpu_count() or args.n_jobs)
     cache_dir = Path(args.cache_dir).resolve()
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -66,6 +84,7 @@ def main():
     model = CascadeForestClassifier(
         n_jobs=effective_n_jobs,
         random_state=args.random_state,
+        backend=args.backend,
     )
 
     fit_start = time.perf_counter()
@@ -83,7 +102,14 @@ def main():
         'timestamp': now_iso(),
         'host': socket.gethostname(),
         'platform': platform.platform(),
+        'platform_system': platform.system(),
+        'platform_release': platform.release(),
         'python_version': sys.version.split()[0],
+        'processor': platform.processor(),
+        'cpu_count_visible': os.cpu_count(),
+        'nproc': cmd_output(['nproc']),
+        'lscpu_model_name': cmd_output(['bash', '-lc', "lscpu | awk -F: '/Model name/ {gsub(/^ +/, \"\", $2); print $2; exit}'"]),
+        'git_commit': git_commit(root_dir),
         'dataset_id': args.dataset_id,
         'dataset_name': getattr(dataset, 'name', 'unknown'),
         'samples': int(X.shape[0]),
@@ -92,10 +118,16 @@ def main():
         'test_samples': int(X_test.shape[0]),
         'test_size': args.test_size,
         'random_state': args.random_state,
+        'backend': args.backend,
         'requested_n_jobs': args.n_jobs,
         'effective_n_jobs': effective_n_jobs,
         'cache_dir': str(cache_dir),
         'tag': args.tag,
+        'numpy_version': package_version(__import__('numpy')),
+        'sklearn_version': package_version(__import__('sklearn')),
+        'scipy_version': package_version(__import__('scipy')),
+        'deepforest_version': package_version(__import__('deepforest')),
+        'openml_version': package_version(openml),
         'load_seconds': round(t1 - t0, 6),
         'split_seconds': round(t2 - t1, 6),
         'fit_seconds': round(fit_end - fit_start, 6),

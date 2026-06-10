@@ -2,12 +2,27 @@ dataset:
   openml_id: 159
   name: covertype
   cache_dir: ./data/openml_cache
-model:
+split:
+  test_size: 0.2
   random_state: 42
+model:
   n_jobs: 288
   backend: custom
 run:
   repeats: 5
   warmup_runs: 1
-  test_size: 0.2
   output_dir: ./results
+  tag: default
+comparison:
+  primary_metric: fit_seconds_median
+  metrics:
+    - fit_seconds_mean
+    - fit_seconds_median
+    - fit_seconds_stdev
+    - predict_seconds_mean
+    - predict_seconds_median
+    - total_seconds_mean
+    - total_seconds_median
+    - total_seconds_stdev
+    - accuracy_percent_mean
+    - accuracy_percent_median

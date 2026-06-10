@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+results/*
+!results/.gitkeep
+data/openml_cache/
+.venv/
