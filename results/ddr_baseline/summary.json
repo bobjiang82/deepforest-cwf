@@ -1,0 +1,18 @@
+{
+  "runs": 5,
+  "fit_seconds_mean": 72.716889,
+  "fit_seconds_median": 72.356145,
+  "fit_seconds_stdev": 1.035452,
+  "predict_seconds_mean": 2.308011,
+  "predict_seconds_median": 2.299509,
+  "load_seconds_mean": 0.069921,
+  "load_seconds_median": 0.070102,
+  "total_seconds_mean": 75.289994,
+  "total_seconds_median": 74.840106,
+  "total_seconds_stdev": 1.121195,
+  "accuracy_percent_mean": 53.4095,
+  "accuracy_percent_median": 53.4095,
+  "tag": "ddr_baseline",
+  "backend": "custom",
+  "n_jobs": 288
+}
