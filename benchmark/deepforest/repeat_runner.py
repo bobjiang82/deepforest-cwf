@@ -6,7 +6,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-import yaml
+try:
+    import yaml
+except ModuleNotFoundError:
+    yaml = None
 
 
 def extract_json_from_stdout(stdout: str):
@@ -34,7 +37,74 @@ def run_once(cmd):
 
 def load_config(path):
     with open(path, 'r', encoding='utf-8') as f:
-        return yaml.safe_load(f)
+        content = f.read()
+    if yaml is not None:
+        return yaml.safe_load(content)
+    return load_simple_yaml_config(content)
+
+
+def load_simple_yaml_config(content: str):
+    root = {}
+    stack = [(-1, root)]
+    for raw_line in content.splitlines():
+        if not raw_line.strip() or raw_line.lstrip().startswith('#'):
+            continue
+        indent = len(raw_line) - len(raw_line.lstrip(' '))
+        stripped = raw_line.strip()
+        while stack and indent <= stack[-1][0]:
+            stack.pop()
+        if not stack:
+            raise ValueError(f'Invalid indentation in config line: {raw_line!r}')
+        current = stack[-1][1]
+        if stripped.startswith('- '):
+            if not isinstance(current, list):
+                raise ValueError(f'List item found outside list context: {raw_line!r}')
+            current.append(parse_scalar(stripped[2:].strip()))
+            continue
+        if ':' not in stripped:
+            raise ValueError(f'Unsupported YAML line: {raw_line!r}')
+        key, value = stripped.split(':', 1)
+        key = key.strip()
+        value = value.strip()
+        if value == '':
+            new_container = [] if next_significant_line_is_list_item(content, raw_line) else {}
+            current[key] = new_container
+            stack.append((indent, new_container))
+        else:
+            current[key] = parse_scalar(value)
+    return root
+
+
+def next_significant_line_is_list_item(content: str, current_line: str):
+    seen_current = False
+    for candidate in content.splitlines():
+        if not seen_current:
+            if candidate == current_line:
+                seen_current = True
+            continue
+        stripped = candidate.strip()
+        if not stripped or stripped.startswith('#'):
+            continue
+        return stripped.startswith('- ')
+    return False
+
+
+def parse_scalar(value: str):
+    lowered = value.lower()
+    if lowered == 'true':
+        return True
+    if lowered == 'false':
+        return False
+    if lowered in {'null', 'none'}:
+        return None
+    if (value.startswith('"') and value.endswith('"')) or (value.startswith("'") and value.endswith("'")):
+        return value[1:-1]
+    try:
+        if any(ch in value for ch in '.eE'):
+            return float(value)
+        return int(value)
+    except ValueError:
+        return value
 
 
 def first_or_default(cli_value, config_value):
