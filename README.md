@@ -29,11 +29,13 @@ benchmark/
     benchmark_df_openml.py      # precise timers + structured output
     repeat_runner.py            # multi-run driver and summary stats
     compare_runs.py             # baseline vs candidate result comparison
+    analyze_scaling.py          # summarize n_jobs scaling sweeps
 scripts/
   setup_env.sh
   collect_system_info.sh
   prepare_serverinfo_tools.sh   # unpack MLC / STREAM / PerfSpect from /mnt/nvme1p5t/serverinfo
   run_benchmark.sh
+  run_scaling_sweep.sh          # sweep multiple n_jobs points and emit scaling summary
   run_stream.sh
   run_mlc.sh
   run_perfspect.sh
@@ -60,6 +62,11 @@ TAG=mrdimm_candidate DF_N_JOBS=288 ./scripts/run_benchmark.sh
 python benchmark/deepforest/compare_runs.py \
   --baseline results/ddr_baseline/summary.json \
   --candidate results/mrdimm_candidate/summary.json
+
+CORE_LIST=1,12,24,48,96,144,192,240,288 \
+REPEATS=3 WARMUP_RUNS=1 SWEEP_NAME=ddr_scaling \
+./scripts/run_scaling_sweep.sh
+cat results/ddr_scaling/scaling_analysis.txt
 ```
 
 ## What the benchmark records
@@ -75,8 +82,41 @@ Per measured run, the benchmark captures:
 - git commit
 - host / kernel / CPU summary
 
-## Sources
+For multi-core scaling sweeps (`scripts/run_scaling_sweep.sh`), the repo also emits:
+- one result directory per `n_jobs` point
+- `scaling_analysis.json` with baseline-relative speedup / efficiency
+- `scaling_analysis.txt` as a terminal-readable summary table
 
+## Core-count scaling workflow
+
+To study how `n_jobs` affects DeepForest on the same machine, run a scaling sweep instead of a single fixed-point benchmark.
+
+Recommended sweep points on `yi-cwf`:
+- single-socket sweep: `1,12,24,48,96,144,192,240,288`
+- quick smoke: `1,48,96,192,288`
+
+Example:
+
+```bash
+CORE_LIST=1,12,24,48,96,144,192,240,288 \
+REPEATS=3 WARMUP_RUNS=1 SWEEP_NAME=ddr_scaling \
+./scripts/run_scaling_sweep.sh
+```
+
+This creates:
+- `results/ddr_scaling/n_jobs_<N>/summary.json` for each point
+- `results/ddr_scaling/scaling_analysis.json`
+- `results/ddr_scaling/scaling_analysis.txt`
+
+The scaling analysis reports:
+- `fit_speedup_vs_baseline`
+- `fit_efficiency_vs_baseline`
+- `total_speedup_vs_baseline`
+- `total_efficiency_vs_baseline`
+
+By default the lowest `n_jobs` point is used as the baseline. If you want a different reference point, set `BASELINE_N_JOBS=<N>`.
+
+## Sources
 - OpenML Covertype dataset lookup and dataset metadata via OpenML API: https://www.openml.org/
 - deep-forest 0.1.7: https://pypi.org/project/deep-forest/0.1.7/
 - NumPy 1.23.5: https://pypi.org/project/numpy/1.23.5/

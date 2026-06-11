@@ -1,0 +1,79 @@
+{
+  "baseline_n_jobs": 48,
+  "best_fit_median": {
+    "n_jobs": 144,
+    "fit_seconds_median": 72.330963
+  },
+  "best_total_median": {
+    "n_jobs": 144,
+    "total_seconds_median": 74.9847
+  },
+  "points": [
+    {
+      "n_jobs": 48,
+      "fit_seconds_median": 112.682055,
+      "total_seconds_median": 115.421988,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/home/yong/deepforest-cwf/results/ddr_scaling_48to288_v1/n_jobs_48/summary.json",
+      "fit_speedup_vs_baseline": 1.0,
+      "fit_efficiency_vs_baseline": 1.0,
+      "total_speedup_vs_baseline": 1.0,
+      "total_efficiency_vs_baseline": 1.0
+    },
+    {
+      "n_jobs": 96,
+      "fit_seconds_median": 85.015907,
+      "total_seconds_median": 87.559239,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/home/yong/deepforest-cwf/results/ddr_scaling_48to288_v1/n_jobs_96/summary.json",
+      "fit_speedup_vs_baseline": 1.325423,
+      "fit_efficiency_vs_baseline": 0.662712,
+      "total_speedup_vs_baseline": 1.318216,
+      "total_efficiency_vs_baseline": 0.659108
+    },
+    {
+      "n_jobs": 144,
+      "fit_seconds_median": 72.330963,
+      "total_seconds_median": 74.9847,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/home/yong/deepforest-cwf/results/ddr_scaling_48to288_v1/n_jobs_144/summary.json",
+      "fit_speedup_vs_baseline": 1.557867,
+      "fit_efficiency_vs_baseline": 0.519289,
+      "total_speedup_vs_baseline": 1.539274,
+      "total_efficiency_vs_baseline": 0.513091
+    },
+    {
+      "n_jobs": 192,
+      "fit_seconds_median": 72.599859,
+      "total_seconds_median": 75.017511,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/home/yong/deepforest-cwf/results/ddr_scaling_48to288_v1/n_jobs_192/summary.json",
+      "fit_speedup_vs_baseline": 1.552097,
+      "fit_efficiency_vs_baseline": 0.388024,
+      "total_speedup_vs_baseline": 1.538601,
+      "total_efficiency_vs_baseline": 0.38465
+    },
+    {
+      "n_jobs": 240,
+      "fit_seconds_median": 72.910415,
+      "total_seconds_median": 75.461539,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/home/yong/deepforest-cwf/results/ddr_scaling_48to288_v1/n_jobs_240/summary.json",
+      "fit_speedup_vs_baseline": 1.545486,
+      "fit_efficiency_vs_baseline": 0.309097,
+      "total_speedup_vs_baseline": 1.529547,
+      "total_efficiency_vs_baseline": 0.305909
+    },
+    {
+      "n_jobs": 288,
+      "fit_seconds_median": 72.80461,
+      "total_seconds_median": 75.413918,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/home/yong/deepforest-cwf/results/ddr_scaling_48to288_v1/n_jobs_288/summary.json",
+      "fit_speedup_vs_baseline": 1.547732,
+      "fit_efficiency_vs_baseline": 0.257955,
+      "total_speedup_vs_baseline": 1.530513,
+      "total_efficiency_vs_baseline": 0.255086
+    }
+  ]
+}
