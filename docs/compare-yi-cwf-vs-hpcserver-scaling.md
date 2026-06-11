@@ -88,12 +88,12 @@ xychart-beta
     title "Machine-local fit efficiency comparison"
     x-axis [96, 144, 192, 288, 384]
     y-axis "fit_efficiency" 0.20 --> 0.80
-    line [0.662712, 0.519289, 0.388024, 0.257955, 0.257955]
+    line [0.662712, 0.519289, 0.388024, 0.257955]
     line [1.000000, 0.727653, 0.560299, 0.366522, 0.281945]
 ```
 
 Legend:
-- line 1 = `yi-cwf` (384 not measured; held flat at the 288 value for visual boundary only)
+- line 1 = `yi-cwf` (measured through 288 only)
 - line 2 = `hpcserver`
 
 ## Observations

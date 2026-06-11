@@ -1,0 +1,12 @@
+A new version (3.17.1) of perfspect is available!
+Please run 'perfspect update' to update to the latest version.
+
+hpcserver             ⣾  preparing to collect data               
+hpcserver             ⣽  collecting data                         
+hpcserver             ⣻  collection complete                     
+
+Report files:
+  /mnt/nvme/deepforest-cwf-hpc/perfspect_2026-06-11_11-11-25/hpcserver.html
+  /mnt/nvme/deepforest-cwf-hpc/perfspect_2026-06-11_11-11-25/hpcserver.xlsx
+  /mnt/nvme/deepforest-cwf-hpc/perfspect_2026-06-11_11-11-25/hpcserver.json
+  /mnt/nvme/deepforest-cwf-hpc/perfspect_2026-06-11_11-11-25/hpcserver.txt

@@ -1,0 +1,16 @@
+Intel(R) Memory Latency Checker - v3.12
+Detected Birch Stream platform, latency optimized mode may need to be turned on to get the best latencies. 
+Command line parameters: --latency_matrix 
+
+Using buffer size of 200.000MiB
+*** Unable to modify prefetchers (try executing 'modprobe msr')
+*** So, enabling random access for latency measurements
+Measuring idle latencies for random access (in ns)...
+		Numa node
+Numa node	     0	     1	     2	     3	     4	     5	
+       0	 107.8	 132.4	 156.4	 245.1	 310.9	 297.7	
+       1	 128.1	 108.3	 132.8	 268.9	 290.3	 272.9	
+       2	 152.4	 124.7	 108.5	 290.6	 287.8	 246.0	
+       3	 243.0	 308.0	 293.0	 107.4	 131.2	 156.9	
+       4	 267.6	 291.3	 272.0	 127.2	 107.9	 132.7	
+       5	 293.8	 288.1	 248.4	 149.9	 124.3	 108.5	
