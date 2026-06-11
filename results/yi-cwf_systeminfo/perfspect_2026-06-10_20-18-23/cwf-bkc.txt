@@ -1,0 +1,247 @@
+System Summary
+==============
+Host Name:                     cwf-bkc
+Time:                          Wed Jun 10 08:18:27 PM CST 2026
+System:                         , 
+Baseboard:                      , 
+Chassis:                        , 
+CPU Model:                     Intel(R) Xeon? 6992E+C
+Architecture:                  x86_64
+Microarchitecture:             CWF
+L3 Cache (instance/total):     576M/576M
+Cores per Socket:              288
+Sockets:                       1
+Hyperthreading:                N/A
+CPUs:                          288
+Intel Turbo Boost:             
+Base Frequency:                2.5GHz
+Maximum Frequency:             
+All-core Maximum Frequency:    
+NUMA Nodes:                    3
+Prefetchers:                   None
+PPINs:                         
+Accelerators Available [used]: DLB 0 [0], DSA 0 [0], IAA 0 [0], QAT 0 [0], vRAN Boost 0 [0]
+Installed Memory:              
+Hugepagesize:                  2048 kB
+Transparent Huge Pages:        always
+Automatic NUMA Balancing:      Disabled
+NIC:                           N/A
+Disk:                          3x 1.7T SAMSUNG MZWLO1T9HCJR-00A07, 1x 1.7T Micron_7450_MTFDKBG1T9TFR
+BIOS:                          
+Microcode:                     0x11000110
+OS:                            CentOS Stream 9
+Kernel:                        6.14.0-memcg-bpf-g49d0466fcd7f
+TDP:                           
+Energy Performance Bias:       
+Energy Performance Preference: 
+Scaling Governor:              performance
+Scaling Driver:                intel_pstate
+C-states:                      POLL: Enabled, C1: Enabled, C1E: Enabled, C6S: Enabled, C6SP: Enabled
+Efficiency Latency Control:    
+CVEs:                          
+System Summary:                1-node,  , 1x Intel(R) Xeon? 6992E+C, 288 cores, ? TDP, HT N/A, Turbo ?, Total Memory , BIOS , microcode 0x11000110, N/A, 1x 1.7T Micron_7450_MTFDKBG1T9TFR, 3x 1.7T SAMSUNG MZWLO1T9HCJR-00A07, CentOS Stream 9, 6.14.0-memcg-bpf-g49d0466fcd7f. Test by Intel as of Wed Jun 10 08:18:27 PM CST 2026.
+
+Host
+====
+Host Name: cwf-bkc
+Time:      Wed Jun 10 08:18:27 PM CST 2026
+System:     , 
+Baseboard:  , 
+Chassis:    , 
+
+Operating System
+================
+OS:              CentOS Stream 9
+Kernel:          6.14.0-memcg-bpf-g49d0466fcd7f
+Boot Parameters: BOOT_IMAGE=(hd3,gpt2)/vmlinuz-6.14.0-memcg-bpf-g49d0466fcd7f root=/dev/mapper/cs_sh14l47001s0901-root ro resume=/dev/mapper/cs_sh14l47001s0901-swap rd.lvm.lv=cs_sh14l47001s0901/root rd.lvm.lv=cs_sh14l47001s0901/swap rhgb selinux=0 console=tty0 console=ttyS0,115200n8 earlyprintk=ttyS0,115200 intel_iommu=on,sm_on numa_balancing=disable tsc=recalibrate kvm_intel.tdx=on nohibernate ignore_loglevel crashkernel=1G-2G:192M,2G-64G:256M,64G-:512M
+Microcode:       0x11000110
+
+Software Version
+================
+GCC:      gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)
+GLIBC:    ldd (GNU libc) 2.34
+Binutils: GNU ld version 2.35.2-72.el9
+Python:   Python 3.9.25
+Python3:  Python 3.9.25
+Java:     openjdk version "17.0.18" 2026-01-20 LTS
+OpenSSL:  OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)
+
+CPU
+===
+CPU Model:                  Intel(R) Xeon? 6992E+C
+Architecture:               x86_64
+Microarchitecture:          CWF
+Family:                     6
+Model:                      221
+Stepping:                   1
+Base Frequency:             2.5GHz
+Maximum Frequency:          
+All-core Maximum Frequency: 
+CPUs:                       288
+On-line CPU List:           0-287
+Hyperthreading:             N/A
+Cores per Socket:           288
+Sockets:                    1
+NUMA Nodes:                 3
+NUMA CPU List:              0-95 :: 96-191 :: 192-287
+L1d Cache:                  32K
+L1i Cache:                  64K
+L2 Cache:                   4M
+L3 Cache (instance/total):  576M/576M
+L3 per Core:                2M
+Memory Channels:            12
+Intel Turbo Boost:          
+Virtualization:             VT-x
+PPINs:                      
+
+Prefetcher
+==========
+No data found.
+
+Accelerator
+===========
+Name               Count   Work Queues   Full Name                          Description
+----               -----   -----------   ---------                          -----------
+DLB                0       N/A           Intel Dynamic Load Balancer        hardware managed system of queues and arbiters connecting producers and consumers
+DSA                0       None          Intel Data Streaming Accelerator   a high-performance data copy and transformation accelerator
+IAA                0       None          Intel Analytics Accelerator        accelerates compression and decompression for big data applications and in-memory analytic databases
+QAT (on CPU)       0       N/A           Intel Quick Assist Technology      accelerates data encryption and compression for applications from networking to enterprise, cloud to storage, and content delivery to database
+QAT (on chipset)   0       N/A           Intel Quick Assist Technology      accelerates data encryption and compression for applications from networking to enterprise, cloud to storage, and content delivery to database
+vRAN Boost         0       N/A           Intel vRAN Boost                   accelerates vRAN workloads
+
+Power
+=====
+TDP:                           
+Energy Performance Bias:       
+Energy Performance Preference: 
+Scaling Governor:              performance
+Scaling Driver:                intel_pstate
+
+C-state
+=======
+Name   Status
+----   ------
+POLL   Enabled
+C1     Enabled
+C1E    Enabled
+C6S    Enabled
+C6SP   Enabled
+
+Maximum Frequency
+=================
+No data found.
+
+Uncore
+======
+Min Frequency (Compute): 
+Min Frequency (I/O):     
+Max Frequency (Compute): 
+Max Frequency (I/O):     
+CHA Count:               
+
+Memory
+======
+Installed Memory:              
+MemTotal:                      1188511376 kB
+MemFree:                       551272360 kB
+MemAvailable:                  823584876 kB
+Buffers:                       5256 kB
+Cached:                        265564012 kB
+HugePages_Total:               0
+Hugepagesize:                  2048 kB
+Transparent Huge Pages:        always
+Automatic NUMA Balancing:      Disabled
+Populated Memory Channels:     
+Total Memory Encryption (TME): 
+Clustering Mode:               SNC 3
+
+DIMM
+====
+No data found.
+
+Network Configuration
+=====================
+net.ipv4.tcp_rmem:            
+net.ipv4.tcp_wmem:            
+net.core.rmem_max:            
+net.core.wmem_max:            
+net.core.netdev_max_backlog:  
+net.ipv4.tcp_max_syn_backlog: 
+net.core.somaxconn:           
+IRQ Balance:                  Enabled
+
+Disk
+====
+Name                      Model                        Size   Mount Point   Type          Request Queue Size   Minimum I/O Size   Firmware Version   PCIe Address   NUMA Node   Link Speed       Link Width   Max Link Speed   Max Link Width
+----                      -----                        ----   -----------   ----          ------------------   ----------------   ----------------   ------------   ---------   ----------       ----------   --------------   --------------
+nvme1n1                   SAMSUNG MZWLO1T9HCJR-00A07   1.7T                 ext4                               4096               OPPA4B5Q                          2           32.0 GT/s PCIe   4            32.0 GT/s PCIe   4  
+nvme2n1                   SAMSUNG MZWLO1T9HCJR-00A07   1.7T                 ext4                               4096               OPPA4B5Q                          2           32.0 GT/s PCIe   4            32.0 GT/s PCIe   4  
+nvme3n1                   SAMSUNG MZWLO1T9HCJR-00A07   1.7T                 ext4                               4096               OPPA4B5Q                          2           32.0 GT/s PCIe   4            32.0 GT/s PCIe   4  
+nvme0n1                   Micron_7450_MTFDKBG1T9TFR    1.7T                               1023                 262144             E2MU110            0000:15:00.0   0           16.0 GT/s PCIe   2            16.0 GT/s PCIe   4  
+nvme0n1p1                                              600M   /boot/efi     vfat          1023                 262144                                                                                                             
+nvme0n1p2                                              1G     /boot         xfs           1023                 262144                                                                                                             
+nvme0n1p3                                              1.7T                 LVM2_member   1023                 262144                                                                                                             
+cs_sh14l47001s0901-root                                70G    /             xfs                                262144                                                                                                             
+cs_sh14l47001s0901-swap                                4G     [SWAP]        swap                               262144                                                                                                             
+cs_sh14l47001s0901-home                                1.7T   /home         xfs                                262144                                                                                                             
+
+Filesystem
+==========
+Filesystem                            Size   Used   Avail   Use%   Mounted on                  Mount Options
+----------                            ----   ----   -----   ----   ----------                  -------------
+devtmpfs                              4.0M   0      4.0M    0%     /dev                           
+tmpfs                                 567G   724K   567G    1%     /dev/shm                       
+tmpfs                                 227G   4.0G   223G    2%     /run                           
+efivarfs                              696K   140K   552K    21%    /sys/firmware/efi/efivars      
+/dev/mapper/cs_sh14l47001s0901-root   70G    51G    20G     73%    /                              
+/dev/nvme0n1p2                        960M   760M   201M    80%    /boot                          
+/dev/mapper/cs_sh14l47001s0901-home   1.7T   150G   1.6T    9%     /home                          
+/dev/nvme0n1p1                        599M   7.5M   592M    2%     /boot/efi                      
+tmpfs                                 114G   48K    114G    1%     /run/user/42                   
+tmpfs                                 114G   272K   114G    1%     /run/user/1000                 
+tmpfs                                 114G   36K    114G    1%     /run/user/1002                 
+
+Gaudi
+=====
+No data found.
+
+CXL
+===
+No data found.
+
+Process
+=======
+PID       PPID      %CPU   %MEM   RSS       COMMAND
+---       ----      ----   ----   ---       -------
+372297    1         8.4    0.1    1426196   /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+4550      1         5.0    0.0    613048    /usr/bin/containerd
+2555717   2555705   4.3    0.0    33860     /home/yong/deepforest-cwf/tools/perfspect/perfspect report
+482547    482512    2.4    0.0    100876    /bin/python3 -m uvicorn agent_server:app --host 0.0.0.0 --port 8081 --timeout-keep-alive 30 --backlog 8192
+2555471   2555470   0.2    0.0    4648      bash -c cd ~/deepforest-cwf && SERVERINFO_DIR=$HOME/serverinfo timeout 180s ./scripts/run_perfspect.sh --out ~/deepforest-cwf/results/system_perfspect_smoke.txt --help | sed -n "1,80p"
+5127      4823      0.1    0.0    9284      /usr/libexec/gsd-housekeeping
+4513      1         0.1    0.0    27840     /usr/sbin/NetworkManager --no-daemon
+4315      1         0.1    0.0    2316      /usr/sbin/irqbalance
+3063756   1         0.0    0.0    4648      /usr/bin/containerd-shim-runc-v2 -namespace moby -id 06914a2862b4926eae51bdfeab1b164b18a3542edd106f5d2eff8f52f67b65d0 -address /run/containerd/containerd.sock
+3062705   1         0.0    0.0    4648      /usr/bin/containerd-shim-runc-v2 -namespace moby -id cc9e2ef393793b941eb94b27537efd37cf927bce1d0fa82695d3855bc6204765 -address /run/containerd/containerd.sock
+3062691   1         0.0    0.0    4632      /usr/bin/containerd-shim-runc-v2 -namespace moby -id 02d0e179339c0d139f9820c6cd93182bac153a84a377dfedbf6d6c44a050efbb -address /run/containerd/containerd.sock
+3062686   1         0.0    0.0    4656      /usr/bin/containerd-shim-runc-v2 -namespace moby -id 5f4f080d4b914d0d9d05a0cad46e9b551e22e0e9b94d8d085bbd809ccf208d8a -address /run/containerd/containerd.sock
+3061632   1         0.0    0.0    11560     /usr/bin/containerd-shim-runc-v2 -namespace moby -id 41b3e98fd67b91c7944540561d209c1c6b8f6f0a7935fa634b5001f0619c3ea1 -address /run/containerd/containerd.sock
+3061597   1         0.0    0.0    4628      /usr/bin/containerd-shim-runc-v2 -namespace moby -id b03c18255e4b4d0b796b96fae9e8ded17deda790f69d16fa19fb0b2372655053 -address /run/containerd/containerd.sock
+3061536   1         0.0    0.0    4656      /usr/bin/containerd-shim-runc-v2 -namespace moby -id f71ed8c2599f00958994ec8e7d3bbf9d3c6c063d76e0630306bbebd307e96f11 -address /run/containerd/containerd.sock
+3061524   1         0.0    0.0    9192      /usr/bin/containerd-shim-runc-v2 -namespace moby -id 8f3e4108c1d990db56200a455bfac58733eab845d40d3a57f3fb279bf444835b -address /run/containerd/containerd.sock
+3061426   1         0.0    0.0    11560     /usr/bin/containerd-shim-runc-v2 -namespace moby -id 3e193a9e7fe176a4bea3481e50cc51353007d1858dc94c83d5e6c4a53e073ffb -address /run/containerd/containerd.sock
+3061239   1         0.0    0.0    9240      /usr/bin/containerd-shim-runc-v2 -namespace moby -id 99579b1db8e82571efff4dcb4b18039d129eff585197b8b9f62e18fd880824dc -address /run/containerd/containerd.sock
+3061185   1         0.0    0.0    4652      /usr/bin/containerd-shim-runc-v2 -namespace moby -id 7c1909167b2a58ba065cc29614db34571015514c5bd0be117ebd024c454014fb -address /run/containerd/containerd.sock
+
+Insights
+========
+Recommendation                                Justification
+--------------                                -------------
+Consider enabling Automatic NUMA Balancing.   Automatic NUMA Balancing is not enabled.
+
+PerfSpect
+=========
+Version:   3.17.0_2026-04-20_956744c9
+Args:      /home/yong/deepforest-cwf/tools/perfspect/perfspect report
+OutputDir: /home/yong/deepforest-cwf/perfspect_2026-06-10_20-18-23
+

@@ -1,0 +1,651 @@
+{
+ "Accelerator": [
+  {
+   "Count": "0",
+   "Description": "hardware managed system of queues and arbiters connecting producers and consumers",
+   "Full Name": "Intel Dynamic Load Balancer",
+   "Name": "DLB",
+   "Work Queues": "N/A"
+  },
+  {
+   "Count": "0",
+   "Description": "a high-performance data copy and transformation accelerator",
+   "Full Name": "Intel Data Streaming Accelerator",
+   "Name": "DSA",
+   "Work Queues": "None"
+  },
+  {
+   "Count": "0",
+   "Description": "accelerates compression and decompression for big data applications and in-memory analytic databases",
+   "Full Name": "Intel Analytics Accelerator",
+   "Name": "IAA",
+   "Work Queues": "None"
+  },
+  {
+   "Count": "0",
+   "Description": "accelerates data encryption and compression for applications from networking to enterprise, cloud to storage, and content delivery to database",
+   "Full Name": "Intel Quick Assist Technology",
+   "Name": "QAT (on CPU)",
+   "Work Queues": "N/A"
+  },
+  {
+   "Count": "0",
+   "Description": "accelerates data encryption and compression for applications from networking to enterprise, cloud to storage, and content delivery to database",
+   "Full Name": "Intel Quick Assist Technology",
+   "Name": "QAT (on chipset)",
+   "Work Queues": "N/A"
+  },
+  {
+   "Count": "0",
+   "Description": "accelerates vRAN workloads",
+   "Full Name": "Intel vRAN Boost",
+   "Name": "vRAN Boost",
+   "Work Queues": "N/A"
+  }
+ ],
+ "C-state": [
+  {
+   "Name": "POLL",
+   "Status": "Enabled"
+  },
+  {
+   "Name": "C1",
+   "Status": "Enabled"
+  },
+  {
+   "Name": "C1E",
+   "Status": "Enabled"
+  },
+  {
+   "Name": "C6S",
+   "Status": "Enabled"
+  },
+  {
+   "Name": "C6SP",
+   "Status": "Enabled"
+  }
+ ],
+ "CPU": [
+  {
+   "All-core Maximum Frequency": "",
+   "Architecture": "x86_64",
+   "Base Frequency": "2.5GHz",
+   "CPU Model": "Intel(R) Xeon? 6992E+C",
+   "CPUs": "288",
+   "Cores per Socket": "288",
+   "Family": "6",
+   "Hyperthreading": "N/A",
+   "Intel Turbo Boost": "",
+   "L1d Cache": "32K",
+   "L1i Cache": "64K",
+   "L2 Cache": "4M",
+   "L3 Cache (instance/total)": "576M/576M",
+   "L3 per Core": "2M",
+   "Maximum Frequency": "",
+   "Memory Channels": "12",
+   "Microarchitecture": "CWF",
+   "Model": "221",
+   "NUMA CPU List": "0-95 :: 96-191 :: 192-287",
+   "NUMA Nodes": "3",
+   "On-line CPU List": "0-287",
+   "PPINs": "",
+   "Sockets": "1",
+   "Stepping": "1",
+   "Virtualization": "VT-x"
+  }
+ ],
+ "CXL": [],
+ "DIMM": [],
+ "Disk": [
+  {
+   "Firmware Version": "OPPA4B5Q",
+   "Link Speed": "32.0 GT/s PCIe",
+   "Link Width": "4",
+   "Max Link Speed": "32.0 GT/s PCIe",
+   "Max Link Width": "4",
+   "Minimum I/O Size": "4096",
+   "Model": "SAMSUNG MZWLO1T9HCJR-00A07",
+   "Mount Point": "",
+   "NUMA Node": "2",
+   "Name": "nvme1n1",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": "ext4"
+  },
+  {
+   "Firmware Version": "OPPA4B5Q",
+   "Link Speed": "32.0 GT/s PCIe",
+   "Link Width": "4",
+   "Max Link Speed": "32.0 GT/s PCIe",
+   "Max Link Width": "4",
+   "Minimum I/O Size": "4096",
+   "Model": "SAMSUNG MZWLO1T9HCJR-00A07",
+   "Mount Point": "",
+   "NUMA Node": "2",
+   "Name": "nvme2n1",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": "ext4"
+  },
+  {
+   "Firmware Version": "OPPA4B5Q",
+   "Link Speed": "32.0 GT/s PCIe",
+   "Link Width": "4",
+   "Max Link Speed": "32.0 GT/s PCIe",
+   "Max Link Width": "4",
+   "Minimum I/O Size": "4096",
+   "Model": "SAMSUNG MZWLO1T9HCJR-00A07",
+   "Mount Point": "",
+   "NUMA Node": "2",
+   "Name": "nvme3n1",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": "ext4"
+  },
+  {
+   "Firmware Version": "E2MU110 ",
+   "Link Speed": "16.0 GT/s PCIe",
+   "Link Width": "2",
+   "Max Link Speed": "16.0 GT/s PCIe",
+   "Max Link Width": "4",
+   "Minimum I/O Size": "262144",
+   "Model": "Micron_7450_MTFDKBG1T9TFR",
+   "Mount Point": "",
+   "NUMA Node": "0",
+   "Name": "nvme0n1",
+   "PCIe Address": "0000:15:00.0",
+   "Request Queue Size": "1023",
+   "Size": "1.7T",
+   "Type": ""
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "/boot/efi",
+   "NUMA Node": "",
+   "Name": "nvme0n1p1",
+   "PCIe Address": "",
+   "Request Queue Size": "1023",
+   "Size": "600M",
+   "Type": "vfat"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "/boot",
+   "NUMA Node": "",
+   "Name": "nvme0n1p2",
+   "PCIe Address": "",
+   "Request Queue Size": "1023",
+   "Size": "1G",
+   "Type": "xfs"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "nvme0n1p3",
+   "PCIe Address": "",
+   "Request Queue Size": "1023",
+   "Size": "1.7T",
+   "Type": "LVM2_member"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "/",
+   "NUMA Node": "",
+   "Name": "cs_sh14l47001s0901-root",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "70G",
+   "Type": "xfs"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "[SWAP]",
+   "NUMA Node": "",
+   "Name": "cs_sh14l47001s0901-swap",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "4G",
+   "Type": "swap"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "/home",
+   "NUMA Node": "",
+   "Name": "cs_sh14l47001s0901-home",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": "xfs"
+  }
+ ],
+ "Filesystem": [
+  {
+   "Avail": "4.0M",
+   "Filesystem": "devtmpfs",
+   "Mount Options": "",
+   "Mounted on": "/dev",
+   "Size": "4.0M",
+   "Use%": "0%",
+   "Used": "0"
+  },
+  {
+   "Avail": "567G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "",
+   "Mounted on": "/dev/shm",
+   "Size": "567G",
+   "Use%": "1%",
+   "Used": "724K"
+  },
+  {
+   "Avail": "223G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "",
+   "Mounted on": "/run",
+   "Size": "227G",
+   "Use%": "2%",
+   "Used": "4.0G"
+  },
+  {
+   "Avail": "552K",
+   "Filesystem": "efivarfs",
+   "Mount Options": "",
+   "Mounted on": "/sys/firmware/efi/efivars",
+   "Size": "696K",
+   "Use%": "21%",
+   "Used": "140K"
+  },
+  {
+   "Avail": "20G",
+   "Filesystem": "/dev/mapper/cs_sh14l47001s0901-root",
+   "Mount Options": "",
+   "Mounted on": "/",
+   "Size": "70G",
+   "Use%": "73%",
+   "Used": "51G"
+  },
+  {
+   "Avail": "201M",
+   "Filesystem": "/dev/nvme0n1p2",
+   "Mount Options": "",
+   "Mounted on": "/boot",
+   "Size": "960M",
+   "Use%": "80%",
+   "Used": "760M"
+  },
+  {
+   "Avail": "1.6T",
+   "Filesystem": "/dev/mapper/cs_sh14l47001s0901-home",
+   "Mount Options": "",
+   "Mounted on": "/home",
+   "Size": "1.7T",
+   "Use%": "9%",
+   "Used": "150G"
+  },
+  {
+   "Avail": "592M",
+   "Filesystem": "/dev/nvme0n1p1",
+   "Mount Options": "",
+   "Mounted on": "/boot/efi",
+   "Size": "599M",
+   "Use%": "2%",
+   "Used": "7.5M"
+  },
+  {
+   "Avail": "114G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "",
+   "Mounted on": "/run/user/42",
+   "Size": "114G",
+   "Use%": "1%",
+   "Used": "48K"
+  },
+  {
+   "Avail": "114G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "",
+   "Mounted on": "/run/user/1000",
+   "Size": "114G",
+   "Use%": "1%",
+   "Used": "272K"
+  },
+  {
+   "Avail": "114G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "",
+   "Mounted on": "/run/user/1002",
+   "Size": "114G",
+   "Use%": "1%",
+   "Used": "36K"
+  }
+ ],
+ "Gaudi": [],
+ "Host": [
+  {
+   "Baseboard": " , ",
+   "Chassis": " , ",
+   "Host Name": "cwf-bkc",
+   "System": " , ",
+   "Time": "Wed Jun 10 08:18:27 PM CST 2026"
+  }
+ ],
+ "Insights": [
+  {
+   "Justification": "Automatic NUMA Balancing is not enabled.",
+   "Recommendation": "Consider enabling Automatic NUMA Balancing."
+  }
+ ],
+ "Maximum Frequency": [],
+ "Memory": [
+  {
+   "Automatic NUMA Balancing": "Disabled",
+   "Buffers": "5256 kB",
+   "Cached": "265564012 kB",
+   "Clustering Mode": "SNC 3",
+   "HugePages_Total": "0",
+   "Hugepagesize": "2048 kB",
+   "Installed Memory": "",
+   "MemAvailable": "823584876 kB",
+   "MemFree": "551272360 kB",
+   "MemTotal": "1188511376 kB",
+   "Populated Memory Channels": "",
+   "Total Memory Encryption (TME)": "",
+   "Transparent Huge Pages": "always"
+  }
+ ],
+ "Network Configuration": [
+  {
+   "IRQ Balance": "Enabled",
+   "net.core.netdev_max_backlog": "",
+   "net.core.rmem_max": "",
+   "net.core.somaxconn": "",
+   "net.core.wmem_max": "",
+   "net.ipv4.tcp_max_syn_backlog": "",
+   "net.ipv4.tcp_rmem": "",
+   "net.ipv4.tcp_wmem": ""
+  }
+ ],
+ "Operating System": [
+  {
+   "Boot Parameters": "BOOT_IMAGE=(hd3,gpt2)/vmlinuz-6.14.0-memcg-bpf-g49d0466fcd7f root=/dev/mapper/cs_sh14l47001s0901-root ro resume=/dev/mapper/cs_sh14l47001s0901-swap rd.lvm.lv=cs_sh14l47001s0901/root rd.lvm.lv=cs_sh14l47001s0901/swap rhgb selinux=0 console=tty0 console=ttyS0,115200n8 earlyprintk=ttyS0,115200 intel_iommu=on,sm_on numa_balancing=disable tsc=recalibrate kvm_intel.tdx=on nohibernate ignore_loglevel crashkernel=1G-2G:192M,2G-64G:256M,64G-:512M",
+   "Kernel": "6.14.0-memcg-bpf-g49d0466fcd7f",
+   "Microcode": "0x11000110",
+   "OS": "CentOS Stream 9"
+  }
+ ],
+ "PerfSpect": [
+  {
+   "Args": "/home/yong/deepforest-cwf/tools/perfspect/perfspect report",
+   "OutputDir": "/home/yong/deepforest-cwf/perfspect_2026-06-10_20-18-23",
+   "Version": "3.17.0_2026-04-20_956744c9"
+  }
+ ],
+ "Power": [
+  {
+   "Energy Performance Bias": "",
+   "Energy Performance Preference": "",
+   "Scaling Driver": "intel_pstate",
+   "Scaling Governor": "performance",
+   "TDP": ""
+  }
+ ],
+ "Prefetcher": [],
+ "Process": [
+  {
+   "%CPU": "8.4",
+   "%MEM": "0.1",
+   "COMMAND": "/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock",
+   "PID": "372297",
+   "PPID": "1",
+   "RSS": "1426196"
+  },
+  {
+   "%CPU": "5.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd",
+   "PID": "4550",
+   "PPID": "1",
+   "RSS": "613048"
+  },
+  {
+   "%CPU": "4.3",
+   "%MEM": "0.0",
+   "COMMAND": "/home/yong/deepforest-cwf/tools/perfspect/perfspect report",
+   "PID": "2555717",
+   "PPID": "2555705",
+   "RSS": "33860"
+  },
+  {
+   "%CPU": "2.4",
+   "%MEM": "0.0",
+   "COMMAND": "/bin/python3 -m uvicorn agent_server:app --host 0.0.0.0 --port 8081 --timeout-keep-alive 30 --backlog 8192",
+   "PID": "482547",
+   "PPID": "482512",
+   "RSS": "100876"
+  },
+  {
+   "%CPU": "0.2",
+   "%MEM": "0.0",
+   "COMMAND": "bash -c cd ~/deepforest-cwf \u0026\u0026 SERVERINFO_DIR=$HOME/serverinfo timeout 180s ./scripts/run_perfspect.sh --out ~/deepforest-cwf/results/system_perfspect_smoke.txt --help | sed -n \"1,80p\"",
+   "PID": "2555471",
+   "PPID": "2555470",
+   "RSS": "4648"
+  },
+  {
+   "%CPU": "0.1",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/libexec/gsd-housekeeping",
+   "PID": "5127",
+   "PPID": "4823",
+   "RSS": "9284"
+  },
+  {
+   "%CPU": "0.1",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/sbin/NetworkManager --no-daemon",
+   "PID": "4513",
+   "PPID": "1",
+   "RSS": "27840"
+  },
+  {
+   "%CPU": "0.1",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/sbin/irqbalance",
+   "PID": "4315",
+   "PPID": "1",
+   "RSS": "2316"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 06914a2862b4926eae51bdfeab1b164b18a3542edd106f5d2eff8f52f67b65d0 -address /run/containerd/containerd.sock",
+   "PID": "3063756",
+   "PPID": "1",
+   "RSS": "4648"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id cc9e2ef393793b941eb94b27537efd37cf927bce1d0fa82695d3855bc6204765 -address /run/containerd/containerd.sock",
+   "PID": "3062705",
+   "PPID": "1",
+   "RSS": "4648"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 02d0e179339c0d139f9820c6cd93182bac153a84a377dfedbf6d6c44a050efbb -address /run/containerd/containerd.sock",
+   "PID": "3062691",
+   "PPID": "1",
+   "RSS": "4632"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 5f4f080d4b914d0d9d05a0cad46e9b551e22e0e9b94d8d085bbd809ccf208d8a -address /run/containerd/containerd.sock",
+   "PID": "3062686",
+   "PPID": "1",
+   "RSS": "4656"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 41b3e98fd67b91c7944540561d209c1c6b8f6f0a7935fa634b5001f0619c3ea1 -address /run/containerd/containerd.sock",
+   "PID": "3061632",
+   "PPID": "1",
+   "RSS": "11560"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id b03c18255e4b4d0b796b96fae9e8ded17deda790f69d16fa19fb0b2372655053 -address /run/containerd/containerd.sock",
+   "PID": "3061597",
+   "PPID": "1",
+   "RSS": "4628"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id f71ed8c2599f00958994ec8e7d3bbf9d3c6c063d76e0630306bbebd307e96f11 -address /run/containerd/containerd.sock",
+   "PID": "3061536",
+   "PPID": "1",
+   "RSS": "4656"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 8f3e4108c1d990db56200a455bfac58733eab845d40d3a57f3fb279bf444835b -address /run/containerd/containerd.sock",
+   "PID": "3061524",
+   "PPID": "1",
+   "RSS": "9192"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 3e193a9e7fe176a4bea3481e50cc51353007d1858dc94c83d5e6c4a53e073ffb -address /run/containerd/containerd.sock",
+   "PID": "3061426",
+   "PPID": "1",
+   "RSS": "11560"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 99579b1db8e82571efff4dcb4b18039d129eff585197b8b9f62e18fd880824dc -address /run/containerd/containerd.sock",
+   "PID": "3061239",
+   "PPID": "1",
+   "RSS": "9240"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 7c1909167b2a58ba065cc29614db34571015514c5bd0be117ebd024c454014fb -address /run/containerd/containerd.sock",
+   "PID": "3061185",
+   "PPID": "1",
+   "RSS": "4652"
+  }
+ ],
+ "Software Version": [
+  {
+   "Binutils": "GNU ld version 2.35.2-72.el9",
+   "GCC": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)",
+   "GLIBC": "ldd (GNU libc) 2.34",
+   "Java": "openjdk version \"17.0.18\" 2026-01-20 LTS",
+   "OpenSSL": "OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)",
+   "Python": "Python 3.9.25",
+   "Python3": "Python 3.9.25"
+  }
+ ],
+ "System Summary": [
+  {
+   "Accelerators Available [used]": "DLB 0 [0], DSA 0 [0], IAA 0 [0], QAT 0 [0], vRAN Boost 0 [0]",
+   "All-core Maximum Frequency": "",
+   "Architecture": "x86_64",
+   "Automatic NUMA Balancing": "Disabled",
+   "BIOS": "",
+   "Base Frequency": "2.5GHz",
+   "Baseboard": " , ",
+   "C-states": "POLL: Enabled, C1: Enabled, C1E: Enabled, C6S: Enabled, C6SP: Enabled",
+   "CPU Model": "Intel(R) Xeon? 6992E+C",
+   "CPUs": "288",
+   "CVEs": "",
+   "Chassis": " , ",
+   "Cores per Socket": "288",
+   "Disk": "3x 1.7T SAMSUNG MZWLO1T9HCJR-00A07, 1x 1.7T Micron_7450_MTFDKBG1T9TFR",
+   "Efficiency Latency Control": "",
+   "Energy Performance Bias": "",
+   "Energy Performance Preference": "",
+   "Host Name": "cwf-bkc",
+   "Hugepagesize": "2048 kB",
+   "Hyperthreading": "N/A",
+   "Installed Memory": "",
+   "Intel Turbo Boost": "",
+   "Kernel": "6.14.0-memcg-bpf-g49d0466fcd7f",
+   "L3 Cache (instance/total)": "576M/576M",
+   "Maximum Frequency": "",
+   "Microarchitecture": "CWF",
+   "Microcode": "0x11000110",
+   "NIC": "N/A",
+   "NUMA Nodes": "3",
+   "OS": "CentOS Stream 9",
+   "PPINs": "",
+   "Prefetchers": "None",
+   "Scaling Driver": "intel_pstate",
+   "Scaling Governor": "performance",
+   "Sockets": "1",
+   "System": " , ",
+   "System Summary": "1-node,  , 1x Intel(R) Xeon? 6992E+C, 288 cores, ? TDP, HT N/A, Turbo ?, Total Memory , BIOS , microcode 0x11000110, N/A, 1x 1.7T Micron_7450_MTFDKBG1T9TFR, 3x 1.7T SAMSUNG MZWLO1T9HCJR-00A07, CentOS Stream 9, 6.14.0-memcg-bpf-g49d0466fcd7f. Test by Intel as of Wed Jun 10 08:18:27 PM CST 2026.",
+   "TDP": "",
+   "Time": "Wed Jun 10 08:18:27 PM CST 2026",
+   "Transparent Huge Pages": "always"
+  }
+ ],
+ "Uncore": [
+  {
+   "CHA Count": "",
+   "Max Frequency (Compute)": "",
+   "Max Frequency (I/O)": "",
+   "Min Frequency (Compute)": "",
+   "Min Frequency (I/O)": ""
+  }
+ ]
+}
