@@ -47,22 +47,22 @@ So:
 | 192 | 72.599859 | 69.226232 | 75.017511 | 71.610131 |
 | 288 | 72.804610 | 70.550359 | 75.413918 | 73.254292 |
 
-## Fit-time comparison chart (common points)
+## Fit-time comparison chart
 
 ```mermaid
 xychart-beta
     title "Fit time comparison: yi-cwf vs hpcserver"
-    x-axis [96, 144, 192, 288]
+    x-axis [96, 144, 192, 288, 384]
     y-axis "fit_seconds_median" 65 --> 90
-    line [85.015907, 72.330963, 72.599859, 72.804610]
-    line [77.574735, 71.073055, 69.226232, 70.550359]
+    line [85.015907, 72.330963, 72.599859, 72.804610, 72.804610]
+    line [77.574735, 71.073055, 69.226232, 70.550359, 68.785441]
 ```
 
 Legend:
-- line 1 = `yi-cwf`
+- line 1 = `yi-cwf` (384 not measured; held flat at the 288 value for visual boundary only)
 - line 2 = `hpcserver`
 
-## Total-time comparison chart (common points)
+## Total-time comparison chart
 
 ```mermaid
 xychart-beta
@@ -75,35 +75,6 @@ xychart-beta
 
 Legend:
 - line 1 = `yi-cwf`
-- line 2 = `hpcserver`
-
-## Normalized fit-time chart (96-core baseline = 1.0 on each machine)
-
-This chart compares shape rather than absolute runtime.
-
-- yi-cwf normalized fit curve from the 96-core point:
-  - `96: 1.000000`
-  - `144: 0.850801`
-  - `192: 0.853964`
-  - `288: 0.856376`
-- hpcserver normalized fit curve from the 96-core point:
-  - `96: 1.000000`
-  - `144: 0.916193`
-  - `192: 0.892387`
-  - `288: 0.909458`
-  - `384: 0.886696`
-
-```mermaid
-xychart-beta
-    title "Normalized fit curve (96-core point = 1.0)"
-    x-axis [96, 144, 192, 288, 384]
-    y-axis "normalized_fit_time" 0.80 --> 1.02
-    line [1.000000, 0.850801, 0.853964, 0.856376, 0.856376]
-    line [1.000000, 0.916193, 0.892387, 0.909458, 0.886696]
-```
-
-Legend:
-- line 1 = `yi-cwf` (384 not measured; held flat at the 288 value for visual boundary only)
 - line 2 = `hpcserver`
 
 ## Efficiency comparison chart
