@@ -54,12 +54,12 @@ xychart-beta
     title "Fit time comparison: yi-cwf vs hpcserver"
     x-axis [96, 144, 192, 288, 384]
     y-axis "fit_seconds_median" 65 --> 90
-    line [85.015907, 72.330963, 72.599859, 72.804610, 72.804610]
+    line [85.015907, 72.330963, 72.599859, 72.804610]
     line [77.574735, 71.073055, 69.226232, 70.550359, 68.785441]
 ```
 
 Legend:
-- line 1 = `yi-cwf` (384 not measured; held flat at the 288 value for visual boundary only)
+- line 1 = `yi-cwf` (measured through 288 only)
 - line 2 = `hpcserver`
 
 ## Total-time comparison chart
