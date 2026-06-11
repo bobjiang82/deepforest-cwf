@@ -1,0 +1,68 @@
+{
+  "baseline_n_jobs": 96,
+  "best_fit_median": {
+    "n_jobs": 384,
+    "fit_seconds_median": 68.785441
+  },
+  "best_total_median": {
+    "n_jobs": 384,
+    "total_seconds_median": 71.184283
+  },
+  "points": [
+    {
+      "n_jobs": 96,
+      "fit_seconds_median": 77.574735,
+      "total_seconds_median": 80.152939,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/mnt/nvme/deepforest-cwf-hpc/results/scaling_184_96to384_v1/n_jobs_96/summary.json",
+      "fit_speedup_vs_baseline": 1.0,
+      "fit_efficiency_vs_baseline": 1.0,
+      "total_speedup_vs_baseline": 1.0,
+      "total_efficiency_vs_baseline": 1.0
+    },
+    {
+      "n_jobs": 144,
+      "fit_seconds_median": 71.073055,
+      "total_seconds_median": 73.673592,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/mnt/nvme/deepforest-cwf-hpc/results/scaling_184_96to384_v1/n_jobs_144/summary.json",
+      "fit_speedup_vs_baseline": 1.091479,
+      "fit_efficiency_vs_baseline": 0.727653,
+      "total_speedup_vs_baseline": 1.087947,
+      "total_efficiency_vs_baseline": 0.725298
+    },
+    {
+      "n_jobs": 192,
+      "fit_seconds_median": 69.226232,
+      "total_seconds_median": 71.610131,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/mnt/nvme/deepforest-cwf-hpc/results/scaling_184_96to384_v1/n_jobs_192/summary.json",
+      "fit_speedup_vs_baseline": 1.120597,
+      "fit_efficiency_vs_baseline": 0.560299,
+      "total_speedup_vs_baseline": 1.119296,
+      "total_efficiency_vs_baseline": 0.559648
+    },
+    {
+      "n_jobs": 288,
+      "fit_seconds_median": 70.550359,
+      "total_seconds_median": 73.254292,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/mnt/nvme/deepforest-cwf-hpc/results/scaling_184_96to384_v1/n_jobs_288/summary.json",
+      "fit_speedup_vs_baseline": 1.099565,
+      "fit_efficiency_vs_baseline": 0.366522,
+      "total_speedup_vs_baseline": 1.094174,
+      "total_efficiency_vs_baseline": 0.364725
+    },
+    {
+      "n_jobs": 384,
+      "fit_seconds_median": 68.785441,
+      "total_seconds_median": 71.184283,
+      "accuracy_percent_median": 53.4095,
+      "summary_path": "/mnt/nvme/deepforest-cwf-hpc/results/scaling_184_96to384_v1/n_jobs_384/summary.json",
+      "fit_speedup_vs_baseline": 1.127778,
+      "fit_efficiency_vs_baseline": 0.281945,
+      "total_speedup_vs_baseline": 1.125992,
+      "total_efficiency_vs_baseline": 0.281498
+    }
+  ]
+}

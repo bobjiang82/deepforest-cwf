@@ -1,0 +1,18 @@
+{
+  "runs": 1,
+  "fit_seconds_mean": 68.785441,
+  "fit_seconds_median": 68.785441,
+  "fit_seconds_stdev": 0.0,
+  "predict_seconds_mean": 2.036896,
+  "predict_seconds_median": 2.036896,
+  "load_seconds_mean": 0.162205,
+  "load_seconds_median": 0.162205,
+  "total_seconds_mean": 71.184283,
+  "total_seconds_median": 71.184283,
+  "total_seconds_stdev": 0.0,
+  "accuracy_percent_mean": 53.4095,
+  "accuracy_percent_median": 53.4095,
+  "tag": "scaling184_n384",
+  "backend": "custom",
+  "n_jobs": 384
+}
