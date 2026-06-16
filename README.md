@@ -43,6 +43,7 @@ configs/
   benchmark-default.yaml
 docs/
   methodology.md
+  njudf_aliyun_host_info.md     # njudf_aliyun connection info and aliyun console link
 results/
   .gitkeep
 smoke/
