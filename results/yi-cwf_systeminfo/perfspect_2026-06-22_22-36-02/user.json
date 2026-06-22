@@ -1,0 +1,2266 @@
+{
+ "Accelerator": [
+  {
+   "Count": "4",
+   "Description": "hardware managed system of queues and arbiters connecting producers and consumers",
+   "Full Name": "Intel Dynamic Load Balancer",
+   "Name": "DLB",
+   "Work Queues": "N/A"
+  },
+  {
+   "Count": "4",
+   "Description": "a high-performance data copy and transformation accelerator",
+   "Full Name": "Intel Data Streaming Accelerator",
+   "Name": "DSA",
+   "Work Queues": "None"
+  },
+  {
+   "Count": "4",
+   "Description": "accelerates compression and decompression for big data applications and in-memory analytic databases",
+   "Full Name": "Intel Analytics Accelerator",
+   "Name": "IAA",
+   "Work Queues": "None"
+  },
+  {
+   "Count": "4",
+   "Description": "accelerates data encryption and compression for applications from networking to enterprise, cloud to storage, and content delivery to database",
+   "Full Name": "Intel Quick Assist Technology",
+   "Name": "QAT (on CPU)",
+   "Work Queues": "N/A"
+  },
+  {
+   "Count": "0",
+   "Description": "accelerates data encryption and compression for applications from networking to enterprise, cloud to storage, and content delivery to database",
+   "Full Name": "Intel Quick Assist Technology",
+   "Name": "QAT (on chipset)",
+   "Work Queues": "N/A"
+  },
+  {
+   "Count": "0",
+   "Description": "accelerates vRAN workloads",
+   "Full Name": "Intel vRAN Boost",
+   "Name": "vRAN Boost",
+   "Work Queues": "N/A"
+  }
+ ],
+ "BIOS": [
+  {
+   "Release Date": "03/10/2026",
+   "Vendor": "Intel Corporation",
+   "Version": "BHSDCRB1.IPC.3545.P40.2603102207"
+  }
+ ],
+ "C-state": [
+  {
+   "Name": "POLL",
+   "Status": "Enabled"
+  },
+  {
+   "Name": "C1_ACPI",
+   "Status": "Enabled"
+  },
+  {
+   "Name": "C2_ACPI",
+   "Status": "Enabled"
+  }
+ ],
+ "CPU": [
+  {
+   "All-core Maximum Frequency": "2.9GHz",
+   "Architecture": "x86_64",
+   "Base Frequency": "2.5GHz",
+   "CPU Model": "Intel(R) Xeon? 6992E+C",
+   "CPUs": "288",
+   "Cores per Socket": "288",
+   "Family": "6",
+   "Hyperthreading": "N/A",
+   "Intel Turbo Boost": "Enabled",
+   "L1d Cache": "32K",
+   "L1i Cache": "64K",
+   "L2 Cache": "4M",
+   "L3 Cache (instance/total)": "576M/576M",
+   "L3 per Core": "2M",
+   "Maximum Frequency": "3.2GHz",
+   "Memory Channels": "12",
+   "Microarchitecture": "CWF",
+   "Model": "221",
+   "NUMA CPU List": "0-95 :: 96-191 :: 192-287",
+   "NUMA Nodes": "3",
+   "On-line CPU List": "0-287",
+   "PPINs": "57424d4ded34e641",
+   "Sockets": "1",
+   "Stepping": "1",
+   "Virtualization": "VT-x"
+  }
+ ],
+ "CVE": [
+  {
+   "CVE-2017-5715": "OK (Mitigation: Enhanced / Automatic IBRS; IBPB: conditional; RSB filling; PBRSB-eIBRS: Not affected; BHI: Not affected)",
+   "CVE-2017-5753": "OK (Mitigation: usercopy/swapgs barriers and __user pointer sanitization)",
+   "CVE-2017-5754": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2018-12126": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2018-12127": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2018-12130": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2018-12207": "OK (this system is not running a hypervisor)",
+   "CVE-2018-3615": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2018-3620": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2018-3639": "OK (Mitigation: Speculative Store Bypass disabled via prctl)",
+   "CVE-2018-3640": "OK (your CPU microcode mitigates the vulnerability)",
+   "CVE-2018-3646": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2019-11091": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2019-11135": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2020-0543": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2022-21123": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2022-21125": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2022-21166": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2022-29900": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2022-29901": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2022-40982": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2023-20569": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2023-20588": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2023-20593": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2023-23583": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2023-28746": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2024-28956": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2024-36350": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2024-36357": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2024-45332": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2025-40300": "OK (your CPU vendor reported your CPU model as not affected)",
+   "CVE-2025-54505": "OK (your CPU vendor reported your CPU model as not affected)"
+  }
+ ],
+ "CXL": [],
+ "Chassis Status": [
+  {
+   "Chassis Intrusion": "active",
+   "Cooling/Fan Fault": "false",
+   "Drive Fault": "false",
+   "Front-Panel Lockout": "inactive",
+   "Last Power Event": "",
+   "Main Power Fault": "false",
+   "Power Control Fault": "false",
+   "Power Interlock": "inactive",
+   "Power Overload": "false",
+   "Power Restore Policy": "always-off",
+   "System Power": "on"
+  }
+ ],
+ "DIMM": [
+  {
+   "Bank Locator": "BANK 0",
+   "Channel": "0",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_A",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E89A85",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 1",
+   "Channel": "1",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_B",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E89472",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 2",
+   "Channel": "2",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_C",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E8C471",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 3",
+   "Channel": "3",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_D",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E8A120",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 4",
+   "Channel": "4",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_E",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E89996",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 5",
+   "Channel": "5",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_F",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E89425",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 6",
+   "Channel": "6",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_G",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E894AF",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 7",
+   "Channel": "7",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_H",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E8A252",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 8",
+   "Channel": "8",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_I",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E8A171",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 9",
+   "Channel": "9",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_J",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E89837",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 10",
+   "Channel": "10",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_K",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E8954C",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 11",
+   "Channel": "11",
+   "Configured Speed": "6400 MT/s",
+   "Detail": "Synchronous Registered (Buffered)",
+   "Locator": "CPU0_DIMM_L",
+   "Manufacturer": "Micron",
+   "Part": "MTC40F204WS1RC64BB2 QWCC",
+   "Rank": "2",
+   "Serial": "48E8982A",
+   "Size": "96 GB",
+   "Slot": "0",
+   "Socket": "0",
+   "Speed": "6400 MT/s",
+   "Type": "DDR5"
+  },
+  {
+   "Bank Locator": "BANK 12",
+   "Channel": "0",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_A",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 13",
+   "Channel": "1",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_B",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 14",
+   "Channel": "2",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_C",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 15",
+   "Channel": "3",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_D",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 16",
+   "Channel": "4",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_E",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 17",
+   "Channel": "5",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_F",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 18",
+   "Channel": "6",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_G",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 19",
+   "Channel": "7",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_H",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 20",
+   "Channel": "8",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_I",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 21",
+   "Channel": "9",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_J",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 22",
+   "Channel": "10",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_K",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  },
+  {
+   "Bank Locator": "BANK 23",
+   "Channel": "11",
+   "Configured Speed": "",
+   "Detail": "Unknown Synchronous",
+   "Locator": "CPU1_DIMM_L",
+   "Manufacturer": "",
+   "Part": "",
+   "Rank": "",
+   "Serial": "",
+   "Size": "No Module Installed",
+   "Slot": "0",
+   "Socket": "1",
+   "Speed": "",
+   "Type": "Unknown"
+  }
+ ],
+ "Disk": [
+  {
+   "Firmware Version": "OPPA4B5Q",
+   "Link Speed": "32.0 GT/s PCIe",
+   "Link Width": "4",
+   "Max Link Speed": "32.0 GT/s PCIe",
+   "Max Link Width": "4",
+   "Minimum I/O Size": "4096",
+   "Model": "SAMSUNG MZWLO1T9HCJR-00A07",
+   "Mount Point": "",
+   "NUMA Node": "2",
+   "Name": "nvme0n1",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": ""
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "4096",
+   "Model": "",
+   "Mount Point": "/boot/efi",
+   "NUMA Node": "",
+   "Name": "nvme0n1p1",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1G",
+   "Type": "vfat"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "4096",
+   "Model": "",
+   "Mount Point": "/boot",
+   "NUMA Node": "",
+   "Name": "nvme0n1p2",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "2G",
+   "Type": "ext4"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "4096",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "nvme0n1p3",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": "LVM2_member"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "4096",
+   "Model": "",
+   "Mount Point": "/",
+   "NUMA Node": "",
+   "Name": "ubuntu--vg-ubuntu--lv",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "100G",
+   "Type": "ext4"
+  },
+  {
+   "Firmware Version": "E2MU110 ",
+   "Link Speed": "16.0 GT/s PCIe",
+   "Link Width": "2",
+   "Max Link Speed": "16.0 GT/s PCIe",
+   "Max Link Width": "4",
+   "Minimum I/O Size": "262144",
+   "Model": "Micron_7450_MTFDKBG1T9TFR",
+   "Mount Point": "",
+   "NUMA Node": "0",
+   "Name": "nvme1n1",
+   "PCIe Address": "0000:15:00.0",
+   "Request Queue Size": "1023",
+   "Size": "1.7T",
+   "Type": ""
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "nvme1n1p1",
+   "PCIe Address": "",
+   "Request Queue Size": "1023",
+   "Size": "600M",
+   "Type": "vfat"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "nvme1n1p2",
+   "PCIe Address": "",
+   "Request Queue Size": "1023",
+   "Size": "1G",
+   "Type": "xfs"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "nvme1n1p3",
+   "PCIe Address": "",
+   "Request Queue Size": "1023",
+   "Size": "1.7T",
+   "Type": "LVM2_member"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "cs_sh14l47001s0901-swap",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "4G",
+   "Type": "swap"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "cs_sh14l47001s0901-home",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "1.7T",
+   "Type": "xfs"
+  },
+  {
+   "Firmware Version": "",
+   "Link Speed": "",
+   "Link Width": "",
+   "Max Link Speed": "",
+   "Max Link Width": "",
+   "Minimum I/O Size": "262144",
+   "Model": "",
+   "Mount Point": "",
+   "NUMA Node": "",
+   "Name": "cs_sh14l47001s0901-root",
+   "PCIe Address": "",
+   "Request Queue Size": "",
+   "Size": "70G",
+   "Type": "xfs"
+  }
+ ],
+ "Efficiency Latency Control": [
+  {
+   "Die": "4",
+   "ELC High Threshold (%)": "0",
+   "ELC High Threshold Enable": "1",
+   "ELC Low Threshold (%)": "0",
+   "ELC Ratio (MHz)": "0",
+   "Instance": "0",
+   "Max Ratio (MHz)": "2400",
+   "Min Ratio (MHz)": "800",
+   "Mode": "Latency Optimized Mode (LOM)",
+   "Socket": "0",
+   "Type": "IO"
+  },
+  {
+   "Die": "1",
+   "ELC High Threshold (%)": "0",
+   "ELC High Threshold Enable": "1",
+   "ELC Low Threshold (%)": "0",
+   "ELC Ratio (MHz)": "0",
+   "Instance": "0",
+   "Max Ratio (MHz)": "2200",
+   "Min Ratio (MHz)": "800",
+   "Mode": "Latency Optimized Mode (LOM)",
+   "Socket": "0",
+   "Type": "Compute"
+  },
+  {
+   "Die": "0",
+   "ELC High Threshold (%)": "0",
+   "ELC High Threshold Enable": "1",
+   "ELC Low Threshold (%)": "0",
+   "ELC Ratio (MHz)": "0",
+   "Instance": "0",
+   "Max Ratio (MHz)": "2200",
+   "Min Ratio (MHz)": "800",
+   "Mode": "Latency Optimized Mode (LOM)",
+   "Socket": "0",
+   "Type": "Compute"
+  },
+  {
+   "Die": "3",
+   "ELC High Threshold (%)": "0",
+   "ELC High Threshold Enable": "1",
+   "ELC Low Threshold (%)": "0",
+   "ELC Ratio (MHz)": "0",
+   "Instance": "0",
+   "Max Ratio (MHz)": "2400",
+   "Min Ratio (MHz)": "800",
+   "Mode": "Latency Optimized Mode (LOM)",
+   "Socket": "0",
+   "Type": "IO"
+  },
+  {
+   "Die": "2",
+   "ELC High Threshold (%)": "0",
+   "ELC High Threshold Enable": "1",
+   "ELC Low Threshold (%)": "0",
+   "ELC Ratio (MHz)": "0",
+   "Instance": "0",
+   "Max Ratio (MHz)": "2200",
+   "Min Ratio (MHz)": "800",
+   "Mode": "Latency Optimized Mode (LOM)",
+   "Socket": "0",
+   "Type": "Compute"
+  }
+ ],
+ "Filesystem": [
+  {
+   "Avail": "114G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "rw,nosuid,nodev,noexec,relatime,size=118856316k,mode=755,inode64",
+   "Mounted on": "/run",
+   "Size": "114G",
+   "Use%": "1%",
+   "Used": "3.3M"
+  },
+  {
+   "Avail": "422K",
+   "Filesystem": "efivarfs",
+   "Mount Options": "rw,nosuid,nodev,noexec,relatime",
+   "Mounted on": "/sys/firmware/efi/efivars",
+   "Size": "696K",
+   "Use%": "40%",
+   "Used": "270K"
+  },
+  {
+   "Avail": "83G",
+   "Filesystem": "/dev/mapper/ubuntu--vg-ubuntu--lv",
+   "Mount Options": "rw,relatime,stripe=32",
+   "Mounted on": "/",
+   "Size": "98G",
+   "Use%": "12%",
+   "Used": "11G"
+  },
+  {
+   "Avail": "567G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "rw,nosuid,nodev,inode64",
+   "Mounted on": "/dev/shm",
+   "Size": "567G",
+   "Use%": "0%",
+   "Used": "0"
+  },
+  {
+   "Avail": "5.0M",
+   "Filesystem": "tmpfs",
+   "Mount Options": "rw,nosuid,nodev,noexec,relatime,size=5120k,inode64",
+   "Mounted on": "/run/lock",
+   "Size": "5.0M",
+   "Use%": "0%",
+   "Used": "0"
+  },
+  {
+   "Avail": "1.7G",
+   "Filesystem": "/dev/nvme0n1p2",
+   "Mount Options": "rw,relatime,stripe=32",
+   "Mounted on": "/boot",
+   "Size": "2.0G",
+   "Use%": "6%",
+   "Used": "101M"
+  },
+  {
+   "Avail": "1.1G",
+   "Filesystem": "/dev/nvme0n1p1",
+   "Mount Options": "rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro",
+   "Mounted on": "/boot/efi",
+   "Size": "1.1G",
+   "Use%": "1%",
+   "Used": "6.2M"
+  },
+  {
+   "Avail": "114G",
+   "Filesystem": "tmpfs",
+   "Mount Options": "rw,nosuid,nodev,relatime,size=118856312k,nr_inodes=29714078,mode=700,inode64",
+   "Mounted on": "/run/user/0",
+   "Size": "114G",
+   "Use%": "1%",
+   "Used": "12K"
+  }
+ ],
+ "GPU": [
+  {
+   "Manufacturer": "ASPEED",
+   "Model": "Unknown",
+   "PCI ID": "1A03:2000"
+  }
+ ],
+ "Gaudi": [],
+ "Host": [
+  {
+   "Baseboard": "Intel Corporation AvenueCity, 0.02",
+   "Chassis": "Intel Corporation Rack Mount Chassis, ............",
+   "Host Name": "user",
+   "System": "Intel Corporation AvenueCity, ....................",
+   "Time": "Mon Jun 22 10:36:04 PM CST 2026"
+  }
+ ],
+ "ISA": [
+  {
+   "AMX-COMPLEX Instruction": "No",
+   "AMX-FP16 Instruction": "No",
+   "AVX-512 Foundation": "No",
+   "AVX-IFMA Instruction": "Yes",
+   "AVX-NE-CONVERT Instruction": "Yes",
+   "AVX-VNNI-INT8 Instruction": "Yes",
+   "Advanced Encryption Standard New Instructions (AES-NI)": "Yes",
+   "Advanced Matrix Extensions (AMX)": "No",
+   "Advanced Vector Extensions (AVX512_FP16)": "No",
+   "Cache Line Demote (CLDEMOTE)": "Yes",
+   "Compare and Add if Condition is Met (CMPCCXADD)": "Yes",
+   "Enqueue Command Instruction (ENQCMD)": "Yes",
+   "Move 64 Bytes as Direct Store (MOVDIR64B)": "Yes",
+   "Move Doubleword as Direct Store (MOVDIRI)": "Yes",
+   "PREFETCHIT0/1 Instruction": "Yes",
+   "SERIALIZE Instruction": "Yes",
+   "SHA1/SHA256 Instruction Extensions (SHA_NI)": "Yes",
+   "Transactional Synchronization Extensions (TSXLDTRK)": "No",
+   "UMONITOR, UMWAIT, TPAUSE Instructions": "Yes",
+   "Vector AES": "Yes",
+   "Vector Neural Network Instructions (AVX512_BF16)": "No",
+   "Vector Neural Network Instructions (AVX512_VNNI)": "No"
+  }
+ ],
+ "Insights": [
+  {
+   "Justification": "No work queues are configured for DSA accelerator(s).",
+   "Recommendation": "Consider configuring DSA to allow accelerated data copy and transformation in DSA-enabled software."
+  },
+  {
+   "Justification": "No work queues are configured for IAA accelerator(s).",
+   "Recommendation": "Consider configuring IAA to allow accelerated compression and decompression in IAA-enabled software."
+  },
+  {
+   "Justification": "Scaling Governor is set to 'powersave'",
+   "Recommendation": "Consider setting Scaling Governor to 'performance'."
+  },
+  {
+   "Justification": "Energy Performance Preference is set to 'Normal (128)'",
+   "Recommendation": "Consider setting Energy Performance Preference to 'Performance (0)'."
+  },
+  {
+   "Justification": "ELC mode is set to 'Latency Optimized Mode (LOM)' on at least one die.",
+   "Recommendation": "Consider setting Efficiency Latency Control mode to 'Optimized Power Mode (OPM)' to balance uncore performance and power utilization."
+  },
+  {
+   "Justification": "Energy Performance Preference is set to 'Normal (128)' and ELC Mode is set to 'Latency Optimized Mode (LOM)'.",
+   "Recommendation": "Consider setting Energy Performance Preference to 'Performance (0)' to allow Latency Optimized Mode (LOM) to operate as designed."
+  }
+ ],
+ "Kernel Log": [
+  {
+   "Entries": "[  +1.353739] 4xxx 0000:0b:00.0: qat_dev2 started 9 acceleration engines"
+  },
+  {
+   "Entries": "[  +0.001274] 4xxx 0000:10:00.0: enabling device (0140 -\u003e 0142)"
+  },
+  {
+   "Entries": "[  +0.115707] workqueue: work_for_cpu_fn hogged CPU for \u003e10000us 8 times, consider switching to WQ_UNBOUND"
+  },
+  {
+   "Entries": "[  +1.382127] 4xxx 0000:10:00.0: qat_dev3 started 9 acceleration engines"
+  },
+  {
+   "Entries": "[  +0.053514] igb 0000:16:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX"
+  },
+  {
+   "Entries": "[  +0.326982] block nvme1n1: No UUID available providing old NGUID"
+  },
+  {
+   "Entries": "[  +0.049566] NET: Registered PF_QIPCRTR protocol family"
+  },
+  {
+   "Entries": "[  +0.023139] loop0: detected capacity change from 0 to 8"
+  },
+  {
+   "Entries": "[Jun22 21:57] usb 1-4.6: USB disconnect, device number 4"
+  },
+  {
+   "Entries": "[Jun22 22:33] kauditd_printk_skb: 112 callbacks suppressed"
+  },
+  {
+   "Entries": "[  +0.000010] audit: type=1400 audit(1782138825.503:124): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/__init__.cpython-312.pyc.124749413005104\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.005270] audit: type=1400 audit(1782138825.508:125): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/apt.cpython-312.pyc.124749413178864\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.035834] audit: type=1400 audit(1782138825.544:126): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/event_logger.cpython-312.pyc.124749411358384\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.001696] audit: type=1400 audit(1782138825.546:127): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/yaml.cpython-312.pyc.124749400541360\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.002168] audit: type=1400 audit(1782138825.548:128): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/util.cpython-312.pyc.124749400541360\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.000017] audit: type=1400 audit(1782138825.548:129): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_esm_cache\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/__init__.cpython-312.pyc.139833219878320\" pid=9019 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.002399] audit: type=1400 audit(1782138825.550:130): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_esm_cache\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/log.cpython-312.pyc.139833221429632\" pid=9019 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.000033] audit: type=1400 audit(1782138825.551:131): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/__pycache__/exceptions.cpython-312.pyc.124749400541360\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.005988] audit: type=1400 audit(1782138825.556:132): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/messages/__pycache__/__init__.cpython-312.pyc.124749400161712\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": "[  +0.001046] audit: type=1400 audit(1782138825.557:133): apparmor=\"DENIED\" operation=\"mknod\" class=\"file\" profile=\"ubuntu_pro_apt_news\" name=\"/usr/lib/python3/dist-packages/uaclient/messages/__pycache__/urls.cpython-312.pyc.124749400553776\" pid=9017 comm=\"python3\" requested_mask=\"c\" denied_mask=\"c\" fsuid=0 ouid=0"
+  },
+  {
+   "Entries": ""
+  }
+ ],
+ "Maximum Frequency": [
+  {
+   "AVX2": "3.2",
+   "Cores": "1-72",
+   "Cores per Die": "1-24",
+   "SSE": "3.2"
+  },
+  {
+   "AVX2": "3.0",
+   "Cores": "73-144",
+   "Cores per Die": "25-48",
+   "SSE": "3.0"
+  },
+  {
+   "AVX2": "3.0",
+   "Cores": "145-216",
+   "Cores per Die": "49-72",
+   "SSE": "3.0"
+  },
+  {
+   "AVX2": "2.9",
+   "Cores": "217-288",
+   "Cores per Die": "73-96",
+   "SSE": "2.9"
+  }
+ ],
+ "Memory": [
+  {
+   "Automatic NUMA Balancing": "Enabled",
+   "Buffers": "24700 kB",
+   "Cached": "757664 kB",
+   "Clustering Mode": "SNC 3",
+   "HugePages_Total": "0",
+   "Hugepagesize": "2048 kB",
+   "Installed Memory": "1152GB (12x96GB DDR5 6400MT/s [6400MT/s])",
+   "MemAvailable": "1180234412 kB",
+   "MemFree": "1183847024 kB",
+   "MemTotal": "1188563148 kB",
+   "Populated Memory Channels": "12",
+   "Total Memory Encryption (TME)": "Disabled",
+   "Transparent Huge Pages": "madvise"
+  }
+ ],
+ "NIC": [
+  {
+   "Adaptive RX": "off",
+   "Adaptive TX": "off",
+   "Bus": "0000:16:00.0",
+   "Card / Port": "1 / 1",
+   "Driver": "igb",
+   "Driver Version": "6.8.0-71-generic",
+   "Firmware Version": "3.25, 0x800005cc",
+   "Link": "yes",
+   "MAC Address": "a4:bf:01:8c:f3:56",
+   "MTU": "1500",
+   "Model (ID)": "I210 Gigabit Network Connection (0x1533)",
+   "NUMA Node": "0",
+   "Name": "eno1",
+   "RX Queues": "4",
+   "Speed": "1000Mb/s",
+   "TX Queues": "4",
+   "Vendor (ID)": "Intel Corporation (0x8086)",
+   "rx-usecs": "3",
+   "tx-usecs": "0"
+  }
+ ],
+ "NIC CPU Affinity": [
+  {
+   "IRQ:CPU | IRQ:CPU | ...": "197:0-95 | 198:0-95 | 199:0-95 | 200:0-95 | 201:0-95",
+   "Interface": "eno1"
+  }
+ ],
+ "NIC Packet Steering": [
+  {
+   "Interface": "eno1",
+   "Queue:CPU(s) | Queue|CPU(s) | ...": "",
+   "Type": "XPS"
+  },
+  {
+   "Interface": "eno1",
+   "Queue:CPU(s) | Queue|CPU(s) | ...": "",
+   "Type": "RPS"
+  }
+ ],
+ "Network Configuration": [
+  {
+   "IRQ Balance": "Disabled",
+   "net.core.netdev_max_backlog": "1000",
+   "net.core.rmem_max": "212992",
+   "net.core.somaxconn": "4096",
+   "net.core.wmem_max": "212992",
+   "net.ipv4.tcp_max_syn_backlog": "4096",
+   "net.ipv4.tcp_rmem": "4096\t131072\t6291456",
+   "net.ipv4.tcp_wmem": "4096\t16384\t4194304"
+  }
+ ],
+ "Operating System": [
+  {
+   "Boot Parameters": "BOOT_IMAGE=/vmlinuz-6.8.0-71-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro",
+   "Kernel": "6.8.0-71-generic",
+   "Microcode": "0x11000110",
+   "OS": "Ubuntu 24.04.3 LTS"
+  }
+ ],
+ "PCIe": [
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2C1 - Riser 1 (X8_CPU0PE0), slot 1",
+   "Length": "Unknown",
+   "Type": "x8 EDSFF E1"
+  },
+  {
+   "Bus Address": "0000:15:00.0",
+   "Current Usage": "In Use",
+   "Designation": "J2D1 - M.2 (X2_CPU0PE0), slot 2",
+   "Length": "Unknown",
+   "Type": "x2 PCI Express 5 x2"
+  },
+  {
+   "Bus Address": "0000:16:00.0",
+   "Current Usage": "In Use",
+   "Designation": "J2D1 - LOM (X2_CPU0PE0), slot 3",
+   "Length": "Unknown",
+   "Type": "x2 PCI Express 5 x2"
+  },
+  {
+   "Bus Address": "0000:18:00.0",
+   "Current Usage": "In Use",
+   "Designation": "J3D1 - DC-SCM (X2_CPU0PE0), slot 4",
+   "Length": "Unknown",
+   "Type": "x2 PCI Express 5 x2"
+  },
+  {
+   "Bus Address": "0000:19:00.0",
+   "Current Usage": "In Use",
+   "Designation": "J3D1 - DC-SCM (X2_CPU0PE0), slot 5",
+   "Length": "Unknown",
+   "Type": "x2 PCI Express 5 x2"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2A16 - SLOT_C (X16_CPU0PE1), slot 6",
+   "Length": "Unknown",
+   "Type": "x16 PCI Express 5 x16"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2D4 - Riser 2 (X16_CPU0PE2), slot 7",
+   "Length": "Unknown",
+   "Type": "x16 EDSFF E1"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2D3 - MCIO (X4_CPU0PE3), slot 8",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2D5 - MCIO (X4_CPU0PE3), slot 9",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J1D5 - MCIO (X4_CPU0PE3), slot 10",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J1D9 - MCIO (X4_CPU0PE3), slot 11",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "0000:b0:00.0",
+   "Current Usage": "In Use",
+   "Designation": "J3K3 - MCIO (X4_CPU0PE4), slot 12",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J3K2 - MCIO (X4_CPU0PE4), slot 13",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J4K1 - MCIO (X4_CPU0PE4), slot 14",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J4K2 - MCIO (X4_CPU0PE4), slot 15",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J1K2 - MCIO (X4_CPU0PE5), slot 16",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J1K1 - MCIO (X4_CPU0PE5), slot 17",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2K3 - MCIO (X4_CPU0PE5), slot 18",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  },
+  {
+   "Bus Address": "",
+   "Current Usage": "Unavailable",
+   "Designation": "J2K2 - MCIO (X4_CPU0PE5), slot 19",
+   "Length": "Unknown",
+   "Type": "x4 PCI Express 5 x4"
+  }
+ ],
+ "PMU": [
+  {
+   "PMU Driver Version": "6",
+   "cpu_cycles": "Active",
+   "gen_programmable_1": "Inactive",
+   "gen_programmable_2": "Inactive",
+   "gen_programmable_3": "Inactive",
+   "gen_programmable_4": "Inactive",
+   "gen_programmable_5": "Inactive",
+   "gen_programmable_6": "Inactive",
+   "gen_programmable_7": "Inactive",
+   "gen_programmable_8": "Inactive",
+   "instructions": "Inactive",
+   "ref_cycles": "Inactive",
+   "topdown_slots": "Unknown"
+  }
+ ],
+ "PerfSpect": [
+  {
+   "Args": "./perfspect report",
+   "OutputDir": "/home/bjiang7/perfspect/perfspect_2026-06-22_22-36-02",
+   "Version": "3.17.1_2026-05-26_19742ce0"
+  }
+ ],
+ "Power": [
+  {
+   "Energy Performance Bias": "Performance (0)",
+   "Energy Performance Preference": "Normal (128)",
+   "Scaling Driver": "intel_pstate",
+   "Scaling Governor": "powersave",
+   "TDP": "550W"
+  }
+ ],
+ "Prefetcher": [
+  {
+   "Bit": "0",
+   "Description": "L2 Hardware (MLC Streamer) fetches additional lines of code or data into the L2 cache.",
+   "MSR": "0x01A4",
+   "Prefetcher": "L2 HW",
+   "Status": "Enabled"
+  },
+  {
+   "Bit": "1",
+   "Description": "L2 Adjacent Cache Line (MLC Spatial) fetches the cache line that comprises a cache line pair.",
+   "MSR": "0x01A4",
+   "Prefetcher": "L2 Adj",
+   "Status": "Enabled"
+  },
+  {
+   "Bit": "2",
+   "Description": "DCU Hardware (DCU Streamer) fetches the next cache line into the L1 cache.",
+   "MSR": "0x01A4",
+   "Prefetcher": "DCU HW",
+   "Status": "Disabled"
+  },
+  {
+   "Bit": "3",
+   "Description": "DCU Instruction Pointer prefetcher uses sequential load history to determine the cache lines to prefetch.",
+   "MSR": "0x01A4",
+   "Prefetcher": "DCU IP",
+   "Status": "Enabled"
+  },
+  {
+   "Bit": "4",
+   "Description": "DCU Next Page is an L1 data cache prefetcher.",
+   "MSR": "0x01A4",
+   "Prefetcher": "DCU NP",
+   "Status": "Enabled"
+  },
+  {
+   "Bit": "43",
+   "Description": "Last level cache stream prefetcher.",
+   "MSR": "0x1320",
+   "Prefetcher": "LLC Stream",
+   "Status": "Disabled"
+  }
+ ],
+ "Process": [
+  {
+   "%CPU": "700",
+   "%MEM": "0.0",
+   "COMMAND": "ps -eo pid,ppid,%cpu,%mem,rss,command --sort=-%cpu,-pid",
+   "PID": "26833",
+   "PPID": "26832",
+   "RSS": "4608"
+  },
+  {
+   "%CPU": "1.7",
+   "%MEM": "0.0",
+   "COMMAND": "./perfspect report",
+   "PID": "9736",
+   "PPID": "5616",
+   "RSS": "34560"
+  },
+  {
+   "%CPU": "0.2",
+   "%MEM": "0.0",
+   "COMMAND": "bash -c while true; do sleep 1;head -v -n 8 /proc/meminfo; head -v -n 2 /proc/stat /proc/version /proc/uptime /proc/loadavg /proc/sys/fs/file-nr /proc/sys/kernel/hostname; tail -v -n 16 /proc/net/dev;echo '==\u003e /proc/df \u003c==';df -l;echo '==\u003e /proc/who \u003c==';who;echo '==\u003e /proc/end \u003c==';echo '##Moba##'; done",
+   "PID": "9496",
+   "PPID": "5529",
+   "RSS": "2304"
+  },
+  {
+   "%CPU": "0.1",
+   "%MEM": "0.0",
+   "COMMAND": "/sbin/init",
+   "PID": "1",
+   "PPID": "0",
+   "RSS": "9216"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "bash /tmp/perfspect.tmp.805446007/controller.sh",
+   "PID": "9893",
+   "PPID": "9736",
+   "RSS": "2304"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "sshd: root@pts/0",
+   "PID": "5529",
+   "PPID": "4402",
+   "RSS": "7180"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/libexec/fwupd/fwupd",
+   "PID": "4571",
+   "PPID": "1",
+   "RSS": "27648"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/systemd/systemd-resolved",
+   "PID": "8888",
+   "PPID": "1",
+   "RSS": "9216"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/systemd/systemd-udevd",
+   "PID": "2938",
+   "PPID": "1",
+   "RSS": "4608"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
+   "PID": "3991",
+   "PPID": "1",
+   "RSS": "4608"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/systemd/systemd-journald",
+   "PID": "2882",
+   "PPID": "1",
+   "RSS": "9216"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "sshd: root@notty",
+   "PID": "5531",
+   "PPID": "4402",
+   "RSS": "7180"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/libexec/packagekitd",
+   "PID": "9181",
+   "PPID": "1",
+   "RSS": "18432"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/systemd/systemd-timesyncd",
+   "PID": "5225",
+   "PPID": "1",
+   "RSS": "4608"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/systemd/systemd-logind",
+   "PID": "4002",
+   "PPID": "1",
+   "RSS": "6912"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/libexec/udisks2/udisksd",
+   "PID": "4004",
+   "PPID": "1",
+   "RSS": "9216"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/polkit-1/polkitd --no-debug",
+   "PID": "3995",
+   "PPID": "1",
+   "RSS": "6912"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "/usr/lib/systemd/systemd-networkd",
+   "PID": "3806",
+   "PPID": "1",
+   "RSS": "6912"
+  },
+  {
+   "%CPU": "0.0",
+   "%MEM": "0.0",
+   "COMMAND": "-bash",
+   "PID": "5616",
+   "PPID": "5529",
+   "RSS": "2304"
+  }
+ ],
+ "Sensor": [
+  {
+   "Reading": "1 Amps           ",
+   "Sensor": "CPU1 North VR Ou",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1 Amps           ",
+   "Sensor": "CPU1 South VR Ou",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "CPU1 VNN EHV Out",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "DCSCM OCP 12V Ou",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "HSBP 12V Out Cur",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "PCIe 3V3 Out Cur",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "PCIe 12V Out Cur",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.25 Amps        ",
+   "Sensor": "PSU1 In Current ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "14 Amps          ",
+   "Sensor": "PSU1 Out Current",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "System Fans SE 1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Amps           ",
+   "Sensor": "System Fans SW 1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "2133.60 unspeci  ",
+   "Sensor": "Cpu Energy CPU1 ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1663.20 unspeci  ",
+   "Sensor": "Dimm Energy CPU1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1461.60 unspeci  ",
+   "Sensor": "Platform Energy ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm 1 2         ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm 3 4         ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm 5 6         ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm 7 8         ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm 9 10        ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm 11 12       ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm PSU1 Fan 1  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "39.98 unspecifi  ",
+   "Sensor": "Pwm PSU1 Fan 2  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 1           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "6468 RPM         ",
+   "Sensor": "Fan 2           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "5488 RPM         ",
+   "Sensor": "Fan 3           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "6566 RPM         ",
+   "Sensor": "Fan 4           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 5           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 6           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 7           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 8           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 9           ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "6566 RPM         ",
+   "Sensor": "Fan 10          ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 RPM            ",
+   "Sensor": "Fan 11          ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "6664 RPM         ",
+   "Sensor": "Fan 12          ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "8260 RPM         ",
+   "Sensor": "PSU1 Fan Speed 1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "6962 RPM         ",
+   "Sensor": "PSU1 Fan Speed 2",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "CPU1 North VR In",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "CPU1 South VR In",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "CPU1 VNN EHV In ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "116 Watts        ",
+   "Sensor": "Cpu Power Averag",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "Cpu Power Cap CP",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "DCSCM OCP 12V In",
+   "Status": "ok"
+  },
+  {
+   "Reading": "36 Watts         ",
+   "Sensor": "Dimm Power Avera",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "Dimm Power Cap C",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "HSBP 12V Out Pow",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "PCIe 3V3 In Powe",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "PCIe 12V In Powe",
+   "Status": "ok"
+  },
+  {
+   "Reading": "271.40 Watts     ",
+   "Sensor": "PSU1 Input Power",
+   "Status": "ok"
+  },
+  {
+   "Reading": "177 Watts        ",
+   "Sensor": "PSU1 Out Power  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "254 Watts        ",
+   "Sensor": "Platform Power A",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "Platform Power C",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "System Fans SE 1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0 Watts          ",
+   "Sensor": "System Fans SW 1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "24 degrees C     ",
+   "Sensor": "BMC Temp        ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "DIMM A1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "DIMM A2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM B1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM B2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM C1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM C2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM D1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM D2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM E1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "DIMM E2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "21 degrees C     ",
+   "Sensor": "DIMM F1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "21 degrees C     ",
+   "Sensor": "DIMM F2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "DIMM G1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "DIMM G2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "25 degrees C     ",
+   "Sensor": "DIMM H1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "25 degrees C     ",
+   "Sensor": "DIMM H2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "25 degrees C     ",
+   "Sensor": "DIMM I1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "25 degrees C     ",
+   "Sensor": "DIMM I2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "24 degrees C     ",
+   "Sensor": "DIMM J1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "24 degrees C     ",
+   "Sensor": "DIMM J2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "24 degrees C     ",
+   "Sensor": "DIMM K1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "24 degrees C     ",
+   "Sensor": "DIMM K2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "DIMM L1 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "DIMM L2 CPU1    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "34 degrees C     ",
+   "Sensor": "DTS CPU1        ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "34 degrees C     ",
+   "Sensor": "Die CPU1        ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "21 degrees C     ",
+   "Sensor": "Inlet BRD Temp  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "23 degrees C     ",
+   "Sensor": "Left DIMM Bank T",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "Left Mid Board T",
+   "Status": "ok"
+  },
+  {
+   "Reading": "21 degrees C     ",
+   "Sensor": "Left Rear Board ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "50 degrees C     ",
+   "Sensor": "NVMe M2 EDSFF Sl",
+   "Status": "ok"
+  },
+  {
+   "Reading": "24 degrees C     ",
+   "Sensor": "NVMe Slot1 HSBP ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "PSU1 Temperature",
+   "Status": "ok"
+  },
+  {
+   "Reading": "20 degrees C     ",
+   "Sensor": "Right DIMM Bank ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "22 degrees C     ",
+   "Sensor": "Right Mid Board ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "21 degrees C     ",
+   "Sensor": "Right Rear Board",
+   "Status": "ok"
+  },
+  {
+   "Reading": "20 degrees C     ",
+   "Sensor": "Slot1 HSBP1 Temp",
+   "Status": "ok"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "AverageCupsIndex",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "AverageHostCpuUt",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "AverageHostMemor",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "AverageHostPciBa",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "CupsIndex       ",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "HostCpuUtilizati",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "HostMemoryBandwi",
+   "Status": "ns"
+  },
+  {
+   "Reading": "no reading       ",
+   "Sensor": "HostPciBandwidth",
+   "Status": "ns"
+  },
+  {
+   "Reading": "1.18 Volts       ",
+   "Sensor": "CPU1 North VR In",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.18 Volts       ",
+   "Sensor": "CPU1 South VR In",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.18 Volts       ",
+   "Sensor": "CPU1 VNN EHV In ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.18 Volts       ",
+   "Sensor": "DCSCM OCP 12V In",
+   "Status": "ok"
+  },
+  {
+   "Reading": "12 Volts         ",
+   "Sensor": "HSBP 12V Out Vol",
+   "Status": "ok"
+  },
+  {
+   "Reading": "2.86 Volts       ",
+   "Sensor": "P3V BAT CPU0    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "12.03 Volts      ",
+   "Sensor": "P12V NORTH      ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.18 Volts       ",
+   "Sensor": "PCIe 3V3 In Volt",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.18 Volts       ",
+   "Sensor": "PCIe 12V In Volt",
+   "Status": "ok"
+  },
+  {
+   "Reading": "231.28 Volts     ",
+   "Sensor": "PSU1 In Voltage ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.13 Volts       ",
+   "Sensor": "PVCCD0 HV CPU0  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.13 Volts       ",
+   "Sensor": "PVCCD1 HV CPU0  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.80 Volts       ",
+   "Sensor": "PVCCFA EHV CPU0 ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.80 Volts       ",
+   "Sensor": "PVCCFA EHV FIVRA",
+   "Status": "ok"
+  },
+  {
+   "Reading": "0.77 Volts       ",
+   "Sensor": "PVCCINF CPU0    ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.85 Volts       ",
+   "Sensor": "PVCCIN CPU0     ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "1.01 Volts       ",
+   "Sensor": "PVNN MAIN CPU0  ",
+   "Status": "ok"
+  },
+  {
+   "Reading": "12 Volts         ",
+   "Sensor": "System Fans SE 1",
+   "Status": "ok"
+  },
+  {
+   "Reading": "12 Volts         ",
+   "Sensor": "System Fans SW 1",
+   "Status": "ok"
+  }
+ ],
+ "Software Version": [
+  {
+   "Binutils": "",
+   "GCC": "",
+   "GLIBC": "ldd (Ubuntu GLIBC 2.39-0ubuntu8.5) 2.39",
+   "Java": "",
+   "OpenSSL": "OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)",
+   "Python": "",
+   "Python3": "Python 3.12.3"
+  }
+ ],
+ "Speed Select Turbo Frequency - High Priority": [],
+ "Speed Select Turbo Frequency - Low Priority": [],
+ "System Event Log": [
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:42 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:46 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:47 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:48 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:51 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:57 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:29:58 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:30:00 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:30:00 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:30:05 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:02 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:03 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:04 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:06 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:07 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:10 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:11 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Deasserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "13:32:20 CST"
+  },
+  {
+   "Date": " 06/08/26",
+   "Event": "Asserted",
+   "Sensor": "Voltage P3V BAT CPU0",
+   "Status": "Lower Non-critical going low ",
+   "Time": "15:54:22 CST"
+  }
+ ],
+ "System Summary": [
+  {
+   "Accelerators Available [used]": "DLB 4 [0], DSA 4 [0], IAA 4 [0], QAT 4 [0], vRAN Boost 0 [0]",
+   "All-core Maximum Frequency": "2.9GHz",
+   "Architecture": "x86_64",
+   "Automatic NUMA Balancing": "Enabled",
+   "BIOS": "BHSDCRB1.IPC.3545.P40.2603102207",
+   "Base Frequency": "2.5GHz",
+   "Baseboard": "Intel Corporation AvenueCity, 0.02",
+   "C-states": "POLL: Enabled, C1_ACPI: Enabled, C2_ACPI: Enabled",
+   "CPU Model": "Intel(R) Xeon? 6992E+C",
+   "CPUs": "288",
+   "CVEs": "32 OK, 0 Vulnerable",
+   "Chassis": "Intel Corporation Rack Mount Chassis, ............",
+   "Cores per Socket": "288",
+   "Disk": "1x 1.7T SAMSUNG MZWLO1T9HCJR-00A07, 1x 1.7T Micron_7450_MTFDKBG1T9TFR",
+   "Efficiency Latency Control": "Latency Optimized Mode (LOM)",
+   "Energy Performance Bias": "Performance (0)",
+   "Energy Performance Preference": "Normal (128)",
+   "Host Name": "user",
+   "Hugepagesize": "2048 kB",
+   "Hyperthreading": "N/A",
+   "Installed Memory": "1152GB (12x96GB DDR5 6400MT/s [6400MT/s])",
+   "Intel Turbo Boost": "Enabled",
+   "Kernel": "6.8.0-71-generic",
+   "L3 Cache (instance/total)": "576M/576M",
+   "Maximum Frequency": "3.2GHz",
+   "Microarchitecture": "CWF",
+   "Microcode": "0x11000110",
+   "NIC": "1x I210 Gigabit Network Connection",
+   "NUMA Nodes": "3",
+   "OS": "Ubuntu 24.04.3 LTS",
+   "PPINs": "57424d4ded34e641",
+   "Prefetchers": "L2 HW: Enabled, L2 Adj: Enabled, DCU HW: Disabled, DCU IP: Enabled, DCU NP: Enabled, LLC Stream: Disabled",
+   "Scaling Driver": "intel_pstate",
+   "Scaling Governor": "powersave",
+   "Sockets": "1",
+   "System": "Intel Corporation AvenueCity, ....................",
+   "System Summary": "1-node, Intel Corporation AvenueCity, 1x Intel(R) Xeon? 6992E+C, 288 cores, 550W TDP, HT N/A, Turbo On, Total Memory 1152GB (12x96GB DDR5 6400MT/s [6400MT/s]), BIOS BHSDCRB1.IPC.3545.P40.2603102207, microcode 0x11000110, 1x I210 Gigabit Network Connection, 1x 1.7T Micron_7450_MTFDKBG1T9TFR, 1x 1.7T SAMSUNG MZWLO1T9HCJR-00A07, Ubuntu 24.04.3 LTS, 6.8.0-71-generic. Test by Intel as of Mon Jun 22 10:36:04 PM CST 2026.",
+   "TDP": "550W",
+   "Time": "Mon Jun 22 10:36:04 PM CST 2026",
+   "Transparent Huge Pages": "madvise"
+  }
+ ],
+ "Uncore": [
+  {
+   "CHA Count": "72",
+   "Max Frequency (Compute)": "2.2GHz",
+   "Max Frequency (I/O)": "2.4GHz",
+   "Min Frequency (Compute)": "0.8GHz",
+   "Min Frequency (I/O)": "0.8GHz"
+  }
+ ]
+}
