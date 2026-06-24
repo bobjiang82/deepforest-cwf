@@ -1,6 +1,8 @@
 __pycache__/
 *.pyc
 results/*
+!results/yi-cwf_systeminfo/
+!results/yi-cwf_systeminfo/**
 !results/.gitkeep
 data/openml_cache/
 .venv/
